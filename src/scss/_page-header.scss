@@ -68,7 +68,7 @@
         margin-top: 0.8rem;
         z-index: -1;
         border-radius: 1.6rem;
-
+        opacity: .7;
         @include breakpoint(mobile) {
             margin-top: 0.4rem;
             border-radius: 0.6rem;

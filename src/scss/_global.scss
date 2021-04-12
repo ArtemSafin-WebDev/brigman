@@ -29,14 +29,9 @@
     --home-bottom-slider-btn-color: #2C193F;
     --home-bottom-slider-btn-text-color: rgba(255, 255, 255, .5);
     --home-bottom-slider-pale-text: rgba(255, 255, 255, 0.5);
-    --glow-color: rgba(95, 56, 135, 0.2);
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, .1);
     --home-bottom-slider-pagination-bullet-thumb: #9C5DE0;
     --progress-glow: #8000FF;
-
-
- 
-
 
 
     @include breakpoint(mobile) {
@@ -63,10 +58,103 @@
     --home-bottom-slider-btn-color: #E8D9F8;
     --home-bottom-slider-btn-text-color: #C6A2EE;
     --home-bottom-slider-pale-text: rgba(58, 58, 58, 0.5);
-    --glow-color: rgba(128, 0, 255, 0.5);
     --home-bottom-slider-pagination-bullet-bg: rgba(156, 93, 224, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(156, 93, 224, 0.6);
     --progress-glow: rgba(128, 0, 255, 0.5);
+}
+
+
+.color-theme-blue {
+    --primary-color:  #4200FF;
+    --primary-color-hover: #351392;
+    --bg-color: #070019;
+    --btn-borders-color: rgba(66, 0, 255, 0.5);
+    --text-color: white;
+    --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
+    --theme-btn-dark-color-active:  #949ED3;
+    --theme-btn-light-color: rgba(255, 255, 255, 0.301);
+    --theme-btn-light-color-active: #FFC700;
+    --tumbler-bg-color: #130047;
+    --tumbler-circle-color: #949ED3;
+    --orb-color: #28009B;
+    --orb-mobile-color: #28009B;
+    --home-mobile-about-text: rgba(255, 255, 255, 0.32);
+    --home-bottom-slider-btn-color: #130047;
+    --home-bottom-slider-btn-text-color: #837F8C;
+    --home-bottom-slider-pale-text: rgba(255, 255, 255, 0.5);
+    --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, .1);
+    --home-bottom-slider-pagination-bullet-thumb: rgba(66, 0, 255, 0.6);
+    --progress-glow: rgba(66, 0, 255, 0.6);
+}
+.color-theme-blue.light-theme {
+    --primary-color:  #4200FF;
+    --primary-color-hover: #351392;
+    --bg-color: #EFE6FB;
+    --btn-borders-color: rgba(66, 0, 255, 0.18);
+    --text-color: #3A3A3A;
+    --theme-btn-dark-color: #D4C4FF;
+    --theme-btn-dark-color-active:  #4200FF;
+    --theme-btn-light-color: #D4C4FF;
+    --theme-btn-light-color-active: #FFC700;
+    --tumbler-bg-color: #D4C4FF;
+    --tumbler-circle-color: #4200FF;
+    --orb-color: rgba(66, 0, 255, 0.3);
+    --orb-mobile-color: rgba(66, 0, 255, 0.3);
+    --home-mobile-about-text: rgba(58, 58, 58, 0.5);
+    --home-bottom-slider-btn-color: #D3C4FF;
+    --home-bottom-slider-btn-text-color: #936DFF;
+    --home-bottom-slider-pale-text: rgba(58, 58, 58, 0.5);
+    --home-bottom-slider-pagination-bullet-bg: rgba(66, 0, 255, 0.1);
+    --home-bottom-slider-pagination-bullet-thumb: rgba(66, 0, 255, 0.6);
+    --progress-glow: rgba(66, 0, 255, 0.6);
+}
+
+
+.color-theme-red {
+    --primary-color:  #FF4343;
+    --primary-color-hover: #941e1e;
+    --bg-color: #190707;
+    --btn-borders-color: rgba(255, 67, 67, 0.5);
+    --text-color: white;
+    --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
+    --theme-btn-dark-color-active:  #949ED3;
+    --theme-btn-light-color: rgba(255, 255, 255, 0.301);
+    --theme-btn-light-color-active: #FFC700;
+    --tumbler-bg-color: #471313;
+    --tumbler-circle-color: #949ED3;
+    --orb-color: #9A2929;
+    --orb-mobile-color: #9A2929;
+    --home-mobile-about-text: rgba(255, 255, 255, 0.32);
+    --home-bottom-slider-btn-color: #471313;
+    --home-bottom-slider-btn-text-color: #8C8383;
+    --home-bottom-slider-pale-text: rgba(255, 255, 255, 0.5);
+    --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
+    --home-bottom-slider-pagination-bullet-thumb: rgba(255, 67, 67, 0.6);
+    --progress-glow: rgba(66, 0, 255, 0.6);
+}
+
+
+.color-theme-red.light-theme {
+    --primary-color:  #FF4343;
+    --primary-color-hover: #941e1e;
+    --bg-color: #FFE3E3;
+    --btn-borders-color: rgba(255, 67, 67, 0.18);
+    --text-color: #3A3A3A;
+    --theme-btn-dark-color: #FFD4D4;
+    --theme-btn-dark-color-active:  #FF4343;
+    --theme-btn-light-color: #FFD4D4;
+    --theme-btn-light-color-active: #FFC700;
+    --tumbler-bg-color: #FFD4D4;
+    --tumbler-circle-color: #FF4343;
+    --orb-color: #FFA7A7;
+    --orb-mobile-color: #FFA7A7;
+    --home-mobile-about-text: rgba(58, 58, 58, 0.5);
+    --home-bottom-slider-btn-color: #FFD3D3;
+    --home-bottom-slider-btn-text-color: #FF9393;
+    --home-bottom-slider-pale-text: rgba(58, 58, 58, 0.5);
+    --home-bottom-slider-pagination-bullet-bg: rgba(255, 67, 67, 0.1);
+    --home-bottom-slider-pagination-bullet-thumb: rgba(255, 67, 67, 0.6);
+    --progress-glow: rgba(105, 184, 177, 0.6);
 }
 
 html {
@@ -106,7 +194,7 @@ body {
     font-family: var(--muller);
     color: var(--text-color);
     background-color: var(--bg-color);
-
+   
     
 }
 

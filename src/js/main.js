@@ -11,6 +11,7 @@ import selectTheme from './selectTheme';
 import orb from './orb';
 import homeTopSlider from './homeTopSlider';
 import homeBottomSlider from './homeBottomSlider';
+import colorSchemes from './colorSchemes';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     orb();
     homeTopSlider();
     homeBottomSlider();
+    colorSchemes();
 });
 
 window.addEventListener('load', function() {
