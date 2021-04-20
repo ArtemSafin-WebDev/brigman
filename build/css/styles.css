@@ -1134,7 +1134,7 @@ html {
   font-size: 10px; }
   @media screen and (min-width: 2500px) {
     html {
-      font-size: clamp(7px, 0.52vw, 24px); } }
+      font-size: clamp(7px, 0.52vw, 25px); } }
   @media screen and (max-width: 1980px) {
     html {
       font-size: 9px; } }
@@ -1149,7 +1149,7 @@ html {
       font-size: 6px; } }
   @media screen and (max-width: 968px) {
     html {
-      font-size: 5px; } }
+      font-size: 4.5px; } }
   @media only screen and (max-width: 768px) {
     html {
       font-size: 6px; } }
