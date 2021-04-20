@@ -1852,7 +1852,7 @@ select:-webkit-autofill:focus {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 2px;
+  height: .2rem;
   position: relative;
   margin-right: 0.8rem;
   background-color: var(--home-bottom-slider-pagination-bullet-bg); }
@@ -2054,7 +2054,9 @@ select:-webkit-autofill:focus {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
   @media only screen and (max-width: 640px) {
     .home__bottom-slider-card-image-container {
       width: 100%;
@@ -2075,6 +2077,8 @@ select:-webkit-autofill:focus {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

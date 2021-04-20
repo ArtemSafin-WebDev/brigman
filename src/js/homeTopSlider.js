@@ -12,7 +12,10 @@ export default function homeTopSlider() {
             slidesPerView: 'auto',
             spaceBetween: 0,
             watchOverflow: true,
-            speed: 500
+            speed: 500,
+            loop: window.matchMedia("(max-width: 640px)").matches ? false : true,
+            loopedSlides: 7,
+            centeredSlides: window.matchMedia("(max-width: 640px)").matches ? false : true
         })
     })
 }
