@@ -1131,25 +1131,8 @@ html {
           box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  font-size: 10px; }
-  @media screen and (min-width: 2500px) {
-    html {
-      font-size: clamp(7px, 0.52vw, 25px); } }
-  @media screen and (max-width: 1980px) {
-    html {
-      font-size: 9px; } }
-  @media only screen and (max-width: 1400px) {
-    html {
-      font-size: 8px; } }
-  @media only screen and (max-width: 1200px) {
-    html {
-      font-size: 7px; } }
-  @media only screen and (max-width: 1024px) {
-    html {
-      font-size: 6px; } }
-  @media screen and (max-width: 968px) {
-    html {
-      font-size: 4px; } }
+  font-size: 10px;
+  font-size: clamp(4px, 0.46vw, 25px); }
   @media only screen and (max-width: 768px) {
     html {
       font-size: 6px; } }
