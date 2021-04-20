@@ -34,7 +34,7 @@ export default function homeBottomSlider() {
             init: false,
             on: {
                 slideChange: swiper => {
-                    // console.log('Slidechange', swiper.realIndex);
+                  
                     autoplay(swiper.realIndex);
                     activeIndex = swiper.realIndex;
                 },
