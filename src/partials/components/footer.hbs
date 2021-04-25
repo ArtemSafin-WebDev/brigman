@@ -1,5 +1,18 @@
-<footer class="page-footer">
+<footer class="page-footer {{#if articleFooter}} page-footer--article {{/if}}">
     <div class="container">
+        {{#if articleFooter}}
+        <a href="#" class="page-footer__next-article">
+            <div class="page-footer__next-article-text">
+                следующая статья
+            </div>
+            <h4 class="page-footer__next-article-name">
+                Различия ковриков для мыши Speed и Control
+            </h4>
+            <svg width="14" height="14" aria-hidden="true" class="icon-footer-arrow">
+                <use xlink:href="#footer-arrow"></use>
+            </svg>
+        </a>
+        {{/if}}
         <div class="page-footer__row">
             <div class="page-footer__copyright">
                 ©brigman, 2021

@@ -36,8 +36,8 @@ body {
     --home-bottom-slider-btn-text-color: rgba(255, 255, 255, 0.5);
     --home-bottom-slider-pale-text: rgba(255, 255, 255, 0.5);
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
-    --home-bottom-slider-pagination-bullet-thumb: #9c5de0;
-    --progress-glow: #8000ff;
+    --home-bottom-slider-pagination-bullet-thumb: rgba(128, 0, 255, .6);
+    --progress-glow: #9327FF;
 
     --catalog-link-color: rgba(255, 255, 255, 0.4);
     --catalog-link-color-hover: white;
@@ -52,6 +52,12 @@ body {
 
     --footer-border-color: rgba(156, 93, 224, 0.3);
     --footer-text-color: rgba(255, 255, 255, 0.3);
+
+
+    --article-text-content-color: rgba(255, 255, 255, .8);
+    --article-table-border-color: rgba(255, 255, 255, .1);
+
+    
 }
 
 .light-theme {
@@ -89,6 +95,11 @@ body {
 
     --footer-border-color: rgb(156, 93, 224, 0.18);
     --footer-text-color: rgba(58, 58, 58, 0.3);
+
+
+    --article-text-content-color: rgba(58, 58, 58, .8);
+    --article-table-border-color: rgba(58, 58, 58, .1);
+    
 
     .page-header--always-dark {
         --text-color: white;
@@ -131,6 +142,9 @@ body {
     --catalog-controls-border-color: rgba(66, 0, 255, 0.5);
     --catalog-controls-bg-color: #070019;
     --catalog-controls-shadow-color: #4200ff;
+
+
+    --footer-border-color: rgba(66, 0, 255, 0.5);
 }
 .color-theme-blue.light-theme {
     --primary-color: #4200ff;
@@ -157,6 +171,9 @@ body {
     --catalog-controls-border-color: rgba(66, 0, 255, 0.18);
     --catalog-controls-bg-color: #efe6fb;
     --catalog-controls-shadow-color: #4400ff91;
+
+
+    --footer-border-color: rgba(66, 0, 255, 0.18);
 
     .page-header--always-dark {
         --text-color: white;
@@ -199,6 +216,9 @@ body {
     --catalog-controls-border-color: rgba(255, 67, 67, 0.5);
     --catalog-controls-bg-color: #190707;
     --catalog-controls-shadow-color: #ff4343;
+
+
+    --footer-border-color: rgba(255, 67, 67, 0.15);
 }
 
 .color-theme-red.light-theme {
@@ -226,6 +246,8 @@ body {
     --catalog-controls-border-color: rgba(255, 67, 67, 0.18);
     --catalog-controls-bg-color: #ffe3e3;
     --catalog-controls-shadow-color: #ff43438a;
+
+    --footer-border-color: rgba(255, 67, 67, 0.18);
 
     .page-header--always-dark {
         --text-color: white;

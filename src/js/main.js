@@ -14,6 +14,7 @@ import homeBottomSlider from './homeBottomSlider';
 import colorSchemes from './colorSchemes';
 import catalogMenuOrb from './catalogMenuOrb';
 import catalogMenu from './catalogMenu';
+import articleGallery from './articleGallery';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     colorSchemes();
     catalogMenuOrb();
     catalogMenu();
+    articleGallery();
 });
 
 window.addEventListener('load', function() {
