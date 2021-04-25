@@ -8,6 +8,12 @@
     position: fixed;
     z-index: -1;
 
+    .no-mobile-orb & {
+        @include breakpoint(mobile) {
+            display: none;
+        }
+    }
+
     @include breakpoint(tablet) {
         width: 90rem;
         height: 90rem;
@@ -29,3 +35,5 @@
         background-color: var(--orb-mobile-color);
     }
 }
+
+

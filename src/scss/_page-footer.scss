@@ -1,0 +1,48 @@
+.page-footer {
+}
+
+.page-footer__row {
+    border-top: 1px solid var(--footer-border-color);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: var(--footer-text-color);
+    padding-top: 2.7rem;
+    padding-bottom: 6rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+
+    @include breakpoint(mobile) {
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.page-footer__copyright {
+    text-transform: uppercase;
+}
+
+.page-footer__made-by {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-left: 4rem;
+    text-transform: uppercase;
+
+    svg {
+        width: 6.5rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+        margin-left: 0.5rem;
+        opacity: 0.3;
+        fill: var(--text-color);
+        margin-top: 0.1rem;
+        transition: opacity 0.2s;
+    }
+
+    .no-touch &:hover {
+        svg {
+            opacity: 1;
+        }
+    }
+}

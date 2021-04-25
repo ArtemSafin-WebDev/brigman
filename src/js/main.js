@@ -12,6 +12,8 @@ import orb from './orb';
 import homeTopSlider from './homeTopSlider';
 import homeBottomSlider from './homeBottomSlider';
 import colorSchemes from './colorSchemes';
+import catalogMenuOrb from './catalogMenuOrb';
+import catalogMenu from './catalogMenu';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -27,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     homeTopSlider();
     homeBottomSlider();
     colorSchemes();
+    catalogMenuOrb();
+    catalogMenu();
 });
 
 window.addEventListener('load', function() {

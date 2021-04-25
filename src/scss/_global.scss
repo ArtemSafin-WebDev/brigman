@@ -12,9 +12,15 @@
     --content-padding: 6rem;
     --muller: 'Muller', sans-serif;
 
+    @include breakpoint(mobile) {
+        --content-padding: 1.6rem;
+    }
+}
+
+body {
     --primary-color: #9c5de0;
     --primary-color-hover: #4e3070;
-    --bg-color: #100916;
+    --bg-color: #0C001C;
     --btn-borders-color: rgba(156, 93, 224, 0.2);
     --text-color: white;
     --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
@@ -33,9 +39,19 @@
     --home-bottom-slider-pagination-bullet-thumb: #9c5de0;
     --progress-glow: #8000ff;
 
-    @include breakpoint(mobile) {
-        --content-padding: 1.6rem;
-    }
+    --catalog-link-color: rgba(255, 255, 255, 0.4);
+    --catalog-link-color-hover: white;
+    --catalog-intro-gradient: linear-gradient(180deg, #0c001c 0%, rgba(12, 0, 28, 0.526042) 19.79%, rgba(12, 0, 28, 0.526042) 73.96%, #0c001c 100%);
+    --catalog-intro-block-heading-color: white;
+    --catalog-intro-arrow-bg: white;
+    --catalog-intro-arrow-icon: black;
+    --catalog-controls-border-color: #402260;
+    --catalog-controls-bg-color: #0C001C;
+    --catalog-controls-shadow-color: #9327ff;
+    --catalog-popup-btn-bg: rgba(108, 56, 164, 0.2);
+
+    --footer-border-color: rgba(156, 93, 224, 0.3);
+    --footer-text-color: rgba(255, 255, 255, 0.3);
 }
 
 .light-theme {
@@ -59,6 +75,35 @@
     --home-bottom-slider-pagination-bullet-bg: rgba(156, 93, 224, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(156, 93, 224, 0.6);
     --progress-glow: rgba(128, 0, 255, 0.5);
+
+    --catalog-link-color: rgba(58, 58, 58, 0.3);
+    --catalog-link-color-hover: rgb(58, 58, 58);
+    --catalog-intro-gradient: linear-gradient(180deg, rgba(239, 223, 255, 0) 54.17%, var(--bg-color) 100%),
+        linear-gradient(180deg, rgba(239, 223, 255, 0) 54.17%, var(--bg-color) 100%);
+    --catalog-intro-block-heading-color: #3a3a3a;
+    --catalog-intro-arrow-bg: #3a3a3a;
+    --catalog-intro-arrow-icon: white;
+    --catalog-controls-border-color: #d4b7f4;
+    --catalog-controls-bg-color: #e1caf9;
+    --catalog-controls-shadow-color: rgba(147, 39, 255, 0.6);
+
+    --footer-border-color: rgb(156, 93, 224, 0.18);
+    --footer-text-color: rgba(58, 58, 58, 0.3);
+
+    .page-header--always-dark {
+        --text-color: white;
+        --primary-color: #9c5de0;
+        --primary-color-hover: #4e3070;
+        --btn-borders-color: rgba(156, 93, 224, 0.2);
+        --bg-color: #100916;
+        --home-mobile-about-text: rgba(255, 255, 255, 0.32);
+        --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
+        --theme-btn-dark-color-active: #949ed3;
+        --theme-btn-light-color: rgba(255, 255, 255, 0.301);
+        --theme-btn-light-color-active: #ffc700;
+        --tumbler-bg-color: #2c193f;
+        --tumbler-circle-color: #949ed3;
+    }
 }
 
 .color-theme-blue {
@@ -82,6 +127,10 @@
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(66, 0, 255, 0.6);
     --progress-glow: rgba(66, 0, 255, 0.6);
+
+    --catalog-controls-border-color: rgba(66, 0, 255, 0.5);
+    --catalog-controls-bg-color: #070019;
+    --catalog-controls-shadow-color: #4200ff;
 }
 .color-theme-blue.light-theme {
     --primary-color: #4200ff;
@@ -104,6 +153,25 @@
     --home-bottom-slider-pagination-bullet-bg: rgba(66, 0, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(66, 0, 255, 0.6);
     --progress-glow: rgba(66, 0, 255, 0.6);
+
+    --catalog-controls-border-color: rgba(66, 0, 255, 0.18);
+    --catalog-controls-bg-color: #efe6fb;
+    --catalog-controls-shadow-color: #4400ff91;
+
+    .page-header--always-dark {
+        --text-color: white;
+        --primary-color: #4200ff;
+        --primary-color-hover: #351392;
+        --btn-borders-color: rgba(66, 0, 255, 0.5);
+        --bg-color: #070019;
+        --home-mobile-about-text: rgba(255, 255, 255, 0.32);
+        --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
+        --theme-btn-dark-color-active: #949ed3;
+        --theme-btn-light-color: rgba(255, 255, 255, 0.301);
+        --theme-btn-light-color-active: #ffc700;
+        --tumbler-bg-color: #130047;
+        --tumbler-circle-color: #949ed3;
+    }
 }
 
 .color-theme-red {
@@ -127,6 +195,10 @@
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(255, 67, 67, 0.6);
     --progress-glow: rgba(66, 0, 255, 0.6);
+
+    --catalog-controls-border-color: rgba(255, 67, 67, 0.5);
+    --catalog-controls-bg-color: #190707;
+    --catalog-controls-shadow-color: #ff4343;
 }
 
 .color-theme-red.light-theme {
@@ -150,6 +222,25 @@
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 67, 67, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(255, 67, 67, 0.6);
     --progress-glow: rgba(105, 184, 177, 0.6);
+
+    --catalog-controls-border-color: rgba(255, 67, 67, 0.18);
+    --catalog-controls-bg-color: #ffe3e3;
+    --catalog-controls-shadow-color: #ff43438a;
+
+    .page-header--always-dark {
+        --text-color: white;
+        --primary-color: #ff4343;
+        --primary-color-hover: #941e1e;
+        --btn-borders-color: rgba(255, 67, 67, 0.5);
+        --bg-color: #190707;
+        --home-mobile-about-text: rgba(255, 255, 255, 0.32);
+        --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
+        --theme-btn-dark-color-active: #949ed3;
+        --theme-btn-light-color: rgba(255, 255, 255, 0.301);
+        --theme-btn-light-color-active: #ffc700;
+        --tumbler-bg-color: #471313;
+        --tumbler-circle-color: #949ed3;
+    }
 }
 
 html {
@@ -165,7 +256,6 @@ html {
     // @media screen and (min-width: 2500px) {
     //     font-size: clamp(11px, 0.52vw, 25px);
     // }
-
 
     // @media screen and (max-width: 1980px) {
     //     font-size: 9px;
