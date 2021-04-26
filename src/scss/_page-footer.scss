@@ -68,6 +68,13 @@
     display: grid;
     grid-template-columns: 20rem 1fr 20rem;
 
+    @include breakpoint(mobile) {
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+       
+    }
+
     .icon-footer-arrow {
         justify-self: flex-end;
         align-self: flex-start;
@@ -75,6 +82,16 @@
         width: 3.6rem;
         height: 3.4rem;
         margin-top: 19rem;
+
+        @include breakpoint(mobile) {
+            margin: 0;
+            width: 2.4rem;
+            height: 2.4rem;
+            justify-self: initial;
+            align-self: center;
+
+            display: none;
+        }
     }
 }
 
@@ -83,6 +100,10 @@
     font-size: 1.1rem;
     line-height: 1.4rem;
     text-transform: uppercase;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .page-footer__next-article-name {
@@ -92,4 +113,15 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     padding-top: 15rem;
+
+    @include breakpoint(small-tablet) {
+        font-size: 8rem;
+        line-height: 1.3;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        padding-top: 3rem;
+    }
 }
