@@ -57,6 +57,9 @@ body {
     --article-text-content-color: rgba(255, 255, 255, .8);
     --article-table-border-color: rgba(255, 255, 255, .1);
 
+    --contacts-input-border-color: rgba(255, 255, 255, .3);
+    --contacts-input-placeholder-color: rgba(255, 255, 255, .3);
+
     
 }
 
@@ -99,6 +102,9 @@ body {
 
     --article-text-content-color: rgba(58, 58, 58, .8);
     --article-table-border-color: rgba(58, 58, 58, .1);
+
+    --contacts-input-border-color: rgba(58, 58, 58, .3);
+    --contacts-input-placeholder-color: rgba(58, 58, 58, .3);
     
 
     .page-header--always-dark {
@@ -308,6 +314,10 @@ html {
 
     @include breakpoint(mobile) {
         font-size: 10px;
+    }
+
+    @include breakpoint(supersmall-mobile) {
+        font-size: 9px;
     }
 }
 

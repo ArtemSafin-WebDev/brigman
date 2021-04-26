@@ -1,0 +1,111 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+
+<section class="contacts">
+    <div class="container">
+        <div class="contacts__content">
+            <h1 class="contacts__heading">
+                Контакты
+            </h1>
+            <div class="contacts__row">
+                <div class="contacts__left-col">
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item">
+                            <div class="contacts__key">
+                                По вопросам рекламы
+                            </div>
+                            <a href="mailto:brigman.it@gmail.com" class="contacts__link">
+                                brigman.it@gmail.com
+                            </a>
+                        </li>
+                        <li class="contacts__list-item">
+                            <div class="contacts__key">
+                                По вопросам сотрудничества
+                            </div>
+                            <a href="mailto:brigman.partners@gmail.com" class="contacts__link">
+                                brigman.partners@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="contacts__download-link">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-doc">
+                            <use xlink:href="#doc"></use>
+                        </svg>
+                        <div class="contacts__download-link-content">
+                            <div class="contacts__download-link-doc-title">
+                                Памятка для рекламодателей
+                            </div>
+                            <div class="contacts__download-link-doc-size">
+                                pdf, 1.24 МБ
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="contacts__right-col">
+                    <ul class="contacts__social-list">
+                        <li class="contacts__social-list-item">
+                            <a href="#" class="contacts__social-link">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-vk">
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                                Группа в ВК
+                            </a>
+                        </li>
+                        <li class="contacts__social-list-item">
+                            <a href="#" class="contacts__social-link">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-youtube">
+                                    <use xlink:href="#youtube"></use>
+                                </svg>
+                                Основной канал
+                            </a>
+                        </li>
+                        <li class="contacts__social-list-item">
+                            <a href="#" class="contacts__social-link">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-youtube">
+                                    <use xlink:href="#youtube"></use>
+                                </svg>
+                                лайф канал
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form action="/" method="POST" class="contacts__form" data-need-validation>
+                <h2 class="contacts__form-heading">
+                    Напишите нам
+                </h2>
+                <div class="contacts__form-fields">
+
+
+                    <div class="contacts__form-field">
+                        <input type="text" name="name" class="contacts__form-input" required placeholder="Имя">
+                    </div>
+                    <div class="contacts__form-field contacts__form-field--high">
+                        <textarea name="comment" class="contacts__form-input" placeholder="Сообщение"
+                            required></textarea>
+                    </div>
+                    <div class="contacts__form-field">
+                        <input type="email" name="email" class="contacts__form-input" required placeholder="Эл. почта">
+                    </div>
+                </div>
+                <div class="contacts__form-controls">
+                    <div class="contacts__form-policy">
+                        Нажимая “Отправить”, вы соглашаетесь с политикой конфиденциальности
+                    </div>
+                    <div class="contacts__form-submit-wrapper">
+
+
+                        <button type="submit" class="contacts__form-submit">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+{{/content}}
+{{/extend}}
