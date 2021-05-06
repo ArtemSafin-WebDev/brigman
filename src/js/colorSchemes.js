@@ -3,7 +3,7 @@ export default function colorSchemes() {
 
     if (!logo) return;
 
-    const colorSchemes = ['blue', 'red'];
+    const colorSchemes = ['blue', 'red', 'green', 'orange'];
     let schemeIndex = 0;
     let schemeSelected = false;
 

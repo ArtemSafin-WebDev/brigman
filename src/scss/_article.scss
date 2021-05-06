@@ -358,7 +358,7 @@
             pointer-events: none;
             fill: var(--bg-color);
             margin-right: 9rem;
-            filter: drop-shadow(0px 0px 1rem var(--progress-glow));
+            filter: drop-shadow(0px 0px 1rem var(--catalog-controls-shadow-color));
 
             @include breakpoint(mobile) {
                 display: none;
