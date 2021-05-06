@@ -51,6 +51,13 @@
 
         z-index: 5;
         background: var(--catalog-intro-gradient);
+        opacity: var(--overlay-opacity, 1);
+    }
+
+    .light-theme & {
+        &::before {
+            opacity: 1;
+        }
     }
 }
 
@@ -77,9 +84,29 @@
     }
 }
 
+.catalog__intro-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint(mobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: initial;
+    }
+}
+
 .catalog__intro-heading-link {
     display: flex;
     align-items: center;
+
+    
+
+
+    @include breakpoint(mobile) {
+        display: block;
+    }
 
     .no-touch &:hover {
         .catalog__intro-heading-link-arrow {
@@ -92,12 +119,30 @@
     }
 }
 
+.catalog__intro-illustration {
+    flex-shrink: 0;
+    width: 16.8rem;
+    height: auto;
+    margin-left: 3rem;
+
+    @include breakpoint(mobile) {
+        margin-left: 0;
+        margin-bottom: 2rem;
+        order: -1;
+        margin-left: 0;
+        width: 12rem;
+        
+    }
+    
+}
+
 .catalog__intro-heading-link-arrow {
     width: 6rem;
     height: 6rem;
     background-color: var(--catalog-intro-arrow-bg);
     border-radius: 50%;
-    display: flex;
+    display: inline-flex;
+    vertical-align: top;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -109,6 +154,7 @@
         width: 3.2rem;
         height: 3.2rem;
         margin-left: 1.1rem;
+        margin-top: .9rem;
     }
     svg {
         fill: var(--catalog-intro-arrow-icon);
@@ -706,6 +752,7 @@
 
     @include breakpoint(mobile) {
         margin-bottom: 2rem;
+      
     }
 }
 
@@ -923,11 +970,10 @@
     line-height: 1.4rem;
     text-transform: uppercase;
     cursor: pointer;
-    transition: color .2s;
+    transition: color 0.2s;
     color: var(--catalog-link-color);
     user-select: none;
 }
-
 
 .catalog__intro-sorting-radio-input:checked + .catalog__intro-sorting-radio-text {
     color: var(--catalog-link-color-hover);
@@ -954,10 +1000,7 @@
         background-color: var(--tumbler-circle-color);
         transform: translateX(1.2rem);
     }
-    
-   
 }
-
 
 .catalog__intro-sorting-radio-input:first-child:checked ~ .catalog__intro-sorting-tumbler::before {
     transform: translateX(0);

@@ -94,84 +94,84 @@
                         <img src="img/catalog-intro-bg.jpg" alt="MDN" class="catalog__intro-picture-block-image">
                     </picture>
                 </div>
-
-                <h1 class="catalog__intro-heading">
-                    <a href="#" class="catalog__intro-heading-link">
-                        Железо
-                        <div class="catalog__intro-heading-link-arrow">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
-                                <use xlink:href="#arrow-down"></use>
-                            </svg>
-                        </div>
-
-                    </a>
-                    <div class="catalog__intro-modal">
-                        <div class="catalog__intro-modal-orb">
-                            <div class="catalog__intro-modal-orb-inner">
-
+                <div class="catalog__intro-top-row">
+                    <h1 class="catalog__intro-heading">
+                        <a href="#" class="catalog__intro-heading-link">
+                            Железо
+                            <div class="catalog__intro-heading-link-arrow">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                                    <use xlink:href="#arrow-down"></use>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="catalog__intro-modal-inner">
+                        </a>
+                        <div class="catalog__intro-modal">
+                            <div class="catalog__intro-modal-orb">
+                                <div class="catalog__intro-modal-orb-inner">
 
-                            <div class="container">
-
-
-                                <div class="catalog__intro-modal-top-row">
-                                    <div class="catalog__intro-modal-top-text">
-                                        Выберите тему
-                                    </div>
-
-                                    <button class="catalog__intro-modal-close" type="button">
-
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
-                                            <use xlink:href="#cross"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="catalog__intro-modal-menu">
-                                    <div class="catalog__intro-modal-menu-left-col">
-
-
-                                        <nav class="catalog__intro-modal-nav">
-                                            <a href="#" class="catalog__intro-modal-nav-link">
-                                                Новости
-                                            </a>
-                                            <a href="#" class="catalog__intro-modal-nav-link">
-                                                Сборка ПК
-                                            </a>
-                                            <a href="#" class="catalog__intro-modal-nav-link active">
-                                                Железо
-                                            </a>
-                                            <a href="#" class="catalog__intro-modal-nav-link">
-                                                Образовач
-                                            </a>
-                                            <a href="#" class="catalog__intro-modal-nav-link">
-                                                Своими руками
-                                            </a>
-                                            <a href="#" class="catalog__intro-modal-nav-link">
-                                                Комп в мешке
-                                            </a>
-                                            <a href="#" class="catalog__intro-modal-nav-link">
-                                                Ноутбуки
-                                            </a>
-                                            <a href="#" class="catalog__intro-modal-nav-link">
-                                                Периферия
-                                            </a>
-
-
-
-
-                                        </nav>
-                                    </div>
-                                    <div class="catalog__intro-modal-menu-right-col">
-                                        <img src="img/catalog-menu-image.jpg" alt=""
-                                            class="catalog__intro-modal-menu-image">
-                                    </div>
                                 </div>
                             </div>
+                            <div class="catalog__intro-modal-inner">
+
+                                <div class="container">
+
+
+                                    <div class="catalog__intro-modal-top-row">
+                                        <div class="catalog__intro-modal-top-text">
+                                            Выберите тему
+                                        </div>
+
+                                        <button class="catalog__intro-modal-close" type="button">
+
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#cross"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="catalog__intro-modal-menu">
+                                        <div class="catalog__intro-modal-menu-left-col">
+
+
+                                            <nav class="catalog__intro-modal-nav">
+                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                    Новости
+                                                </a>
+                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                    Сборка ПК
+                                                </a>
+                                                <a href="#" class="catalog__intro-modal-nav-link active">
+                                                    Железо
+                                                </a>
+                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                    Образовач
+                                                </a>
+                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                    Своими руками
+                                                </a>
+                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                    Комп в мешке
+                                                </a>
+                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                    Ноутбуки
+                                                </a>
+                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                    Периферия
+                                                </a>
+
+
+
+
+                                            </nav>
+                                        </div>
+                                        <div class="catalog__intro-modal-menu-right-col">
+                                            <img src="img/catalog-menu-image.jpg" alt=""
+                                                class="catalog__intro-modal-menu-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </h1>
+                    </h1>
+                </div>
             </div>
             <div class="catalog__intro-filters-row">
                 <ul class="catalog__intro-categories-list">
@@ -281,14 +281,16 @@
                     </li>
                 </ul>
                 <form action="/" method="POST" class="catalog__intro-sorting js-catalog-sorting">
-                    <input type="radio" name="sorting" value="new" class="catalog__intro-sorting-radio-input" id="sorting-new" checked>
+                    <input type="radio" name="sorting" value="new" class="catalog__intro-sorting-radio-input"
+                        id="sorting-new" checked>
                     <label for="sorting-new" class="catalog__intro-sorting-radio-text">
                         Сначала новые
                     </label>
                     <div class="catalog__intro-sorting-tumbler">
-                        
+
                     </div>
-                    <input type="radio" name="sorting" value="popular" class="catalog__intro-sorting-radio-input" id="sorting-popular">
+                    <input type="radio" name="sorting" value="popular" class="catalog__intro-sorting-radio-input"
+                        id="sorting-popular">
 
                     <label for="sorting-popular" class="catalog__intro-sorting-radio-text">
                         Сначала популярные

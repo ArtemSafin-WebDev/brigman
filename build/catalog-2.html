@@ -1,5 +1,84 @@
-{{#extend "layout"}}
-{{#content "main"}}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#ff0000">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="assets/js/ie11CustomProperties.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <title>
+        Brigman - Каталог
+    </title>
+</head>
+
+<body class="no-touch  no-mobile-orb " ontouchstart="">
+    <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 17 10.51" id="arrow-down" xmlns="http://www.w3.org/2000/svg"><path d="M2 0l6.5 6.5L15 0l2 2-8.5 8.5L0 2z"/></symbol><symbol viewBox="0 0 20 19.19" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M10 0L0 9.6l10 9.59V12h10V7.2H10z"/></symbol><symbol viewBox="0 0 20 19.19" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M10 0l10 9.6-10 9.59V12H0V7.2h10z"/></symbol><symbol viewBox="0 0 15 17" id="back-link" xmlns="http://www.w3.org/2000/svg"><path d="M6 12l1.42-1.42L3.83 7H13v10h2V5H3.83l3.59-3.58L6 0 0 6z"/></symbol><symbol viewBox="0 0 20.44 20.44" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M1.44 0L0 1.44l8.78 8.78L0 19l1.44 1.44 8.78-8.78L19 20.44 20.44 19l-8.78-8.78 8.78-8.78L19 0l-8.78 8.78z"/></symbol><symbol viewBox="0 0 19.26 18.2" id="dark-theme" xmlns="http://www.w3.org/2000/svg"><path d="M5.2 0a.52.52 0 00-.52.52V1h-.52a.52.52 0 000 1h.52v.6a.52.52 0 001 0v-.52h.52a.52.52 0 000-1h-.48V.52A.52.52 0 005.2 0zm6.4 3.62l-.68.1A7.28 7.28 0 1019.16 12l.1-.68-.69.1a7.51 7.51 0 01-.89.06 6.25 6.25 0 01-6.24-6.28 7.51 7.51 0 01.06-.89zM1 6.24a.52.52 0 00-.52.52.52.52 0 000 1 .52.52 0 101 0 .52.52 0 000-1A.52.52 0 001 6.24z"/></symbol><symbol viewBox="0 0 36 46" id="doc" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v46h36V12.59l-.28-.31-12-12-.31-.28zm2 2h20v12h12v30H2zm22 1.44L32.56 12H24zM8 20v2h20v-2zm0 6v2h16v-2zm0 6v2h20v-2z"/></symbol><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 36 34.54" id="footer-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M18 0l18 17.27-18 17.27V21.59H0V13h18z"/></symbol><symbol viewBox="0 0 20 20" id="light-theme" xmlns="http://www.w3.org/2000/svg"><path d="M5 10a5 5 0 105-5 5 5 0 00-5 5zm4 7h2v3H9zM9 0h2v3H9zM0 9h3v2H0zm17 0h3v2h-3zM3.64 17.78l-1.42-1.42 2.12-2.12 1.42 1.42zM14.24 4.34l2.12-2.12 1.42 1.42-2.12 2.12zM4.34 5.76L2.22 3.64l1.42-1.42 2.12 2.12zM17.78 16.36l-1.42 1.42-2.12-2.12 1.42-1.42z"/></symbol><symbol viewBox="0 0 18 18" id="like" xmlns="http://www.w3.org/2000/svg"><path d="M7.78 0l-3 6H0v12h14.13a2.26 2.26 0 002.2-1.78L18 8.72A2.26 2.26 0 0015.75 6H9.91a8.41 8.41 0 01.42-2 5 5 0 00.17-1.73A2.24 2.24 0 009.89.75 2.23 2.23 0 008.25 0zm.84 1.69c.05 0 .13 0 .17.07a.82.82 0 01.21.49 4.85 4.85 0 01-.09 1.27 14.35 14.35 0 00-.66 3.18l-.05.8h7.55a.73.73 0 01.72.91l-1.59 7.5a.75.75 0 01-.75.59H6V6.94zM1.5 7.5h3v9h-3zM3 14.25a.75.75 0 10.75.75.76.76 0 00-.75-.75z"/></symbol><symbol viewBox="0 0 20.63 23.37" id="next-link" xmlns="http://www.w3.org/2000/svg"><path d="M12.38 16.5l-2-1.95 4.94-4.93H2.75v13.75H0V6.87h15.36L10.42 2l2-1.95 8.25 8.25z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol viewBox="0 0 68 57" id="quotes" xmlns="http://www.w3.org/2000/svg"><path d="M68 0v9.7a18.93 18.93 0 00-8.53 4.3A17.56 17.56 0 0055 20.41q-1.56 3.68-2 10.87 7.27 0 10.72 4.06a13.63 13.63 0 013.44 8.84 12.07 12.07 0 01-3.84 9.07A12.34 12.34 0 0154.38 57Q47.81 57 43 51.29t-4.74-15.48A36 36 0 0142 19.63 39.08 39.08 0 0152.27 6.57 29.55 29.55 0 0168 0zM29.74 0v9.7a19.47 19.47 0 00-8.53 4.3 17.44 17.44 0 00-4.46 6.41q-1.58 3.68-2 10.87 7.27 0 10.72 4.06a13.58 13.58 0 013.44 8.84 12.21 12.21 0 01-3.75 9.07A12.37 12.37 0 0116.2 57c-4.44 0-8.2-1.9-11.43-5.71S0 42.38 0 35.81a35.88 35.88 0 013.76-16.18A39.08 39.08 0 0114 6.57 29.52 29.52 0 0129.74 0z"/></symbol><symbol viewBox="0 0 17.28 17.03" id="sharing" xmlns="http://www.w3.org/2000/svg"><path d="M12.25 0l-1.06 1.06 3.22 3.22h-1.66A9.76 9.76 0 003 14h1.5a8.25 8.25 0 018.25-8.25h1.66L11.19 9l1.06 1.06 5-5zM0 5v12h16.5v-4.5H15v3H1.5V5z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 14.38 7.5" id="views" xmlns="http://www.w3.org/2000/svg"><path d="M7.19 0C3.28 0 .28 3.44.28 3.44L0 3.75l.28.31S3 7.18 6.67 7.47a4.41 4.41 0 00.52 0 4.58 4.58 0 00.53 0c3.65-.29 6.39-3.41 6.39-3.41l.27-.31-.27-.31S11.1 0 7.19 0zm0 .94A6.68 6.68 0 0110 1.6a3.19 3.19 0 01.47 1.68 3.28 3.28 0 01-2.91 3.27h-.73a3.28 3.28 0 01-2.46-4.94A6.9 6.9 0 017.19.94zm0 .94a1.41 1.41 0 101.41 1.4 1.4 1.4 0 00-1.41-1.4zm-4.1.43a4.52 4.52 0 00-.12 1 4.19 4.19 0 00.65 2.24 11 11 0 01-2.27-1.8 11.25 11.25 0 011.74-1.44zm8.2 0A12.06 12.06 0 0113 3.75a11 11 0 01-2.27 1.77 4.18 4.18 0 00.64-2.24 4 4 0 00-.08-.97z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol><symbol viewBox="0 0 42 30" id="youtube" xmlns="http://www.w3.org/2000/svg"><path d="M41 5a5.19 5.19 0 00-3.67-3.68C34.05.43 21 .42 21 .42S8 .4 4.68 1.26A5.32 5.32 0 001 5C.15 8.23.14 15 .14 15s0 6.8.84 10a5.22 5.22 0 003.68 3.7c3.34.89 16.34.91 16.34.91s13.05 0 16.31-.84A5.22 5.22 0 0041 25.1c.87-3.26.87-10 .87-10s0-6.83-.87-10.1zM16.82 21.26V8.76L27.68 15z"/></symbol></svg>    </div>
+
+    <div class="page-content">
+        <header class="page-header  page-header--always-dark ">
+            <div class="container">
+                <div class="page-header__row">
+                    <a href="#" class="page-header__logo">
+                        <div class="page-header__logo-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 32">
+                                <path fill-rule="evenodd" d="M14.18,0l.37,4.1c-1.94.52-7,2.24-7.17,9V27.91L4.75,26.82,0,15.37,4.75,3.91Z" />
+                                <path fill-rule="evenodd" d="M18.22,0l-.37,4.1c1.93.52,7,2.24,7.16,9V27.91l2.63-1.09L32.4,15.37,27.65,3.91Z" />
+                                <path fill-rule="evenodd"
+                                    d="M16.2,31.57h0l-3.62-1.51V18.53L9.4,17.21V14.28l5.88,2.43v11.8l.92.38.92-.38V16.71L23,14.28v2.93l-3.18,1.32V30.06L16.2,31.57Z" />
+                                <path fill-rule="evenodd"
+                                    d="M36.47,5.84V27.43h9.28c3.77,0,8.48-1.14,8.48-6A5.29,5.29,0,0,0,50.1,16a4.65,4.65,0,0,0,3.27-4.72c0-3.7-2.87-5.46-7.46-5.46ZM49.61,20.89c0,2.35-1.85,2.78-3.92,2.78H41.07V18.12h4.87C47.79,18.12,49.61,18.61,49.61,20.89Zm-.83-8.79c0,1.67-1.27,2.47-3,2.47H41.1V9.64h4.41C47.54,9.64,48.78,10.41,48.78,12.1ZM62.25,27.43V19.88h3.4l5.83,7.55h5.33l-6.45-8.14a6.23,6.23,0,0,0,4.72-6.42c0-5.45-4.38-7-8.57-7H57.63V27.43Zm0-17.52h4.47c1.94,0,3.64.84,3.64,3.06s-1.7,3-3.64,3H62.26ZM79.41,5.84V27.43H84V5.84Zm8.07,10.8c0,7.92,5.83,11.22,11.87,11.22a18.09,18.09,0,0,0,7-1.45V15.71H102v7.71a6.65,6.65,0,0,1-2.38.4c-3.18,0-7.4-1.45-7.4-7.18,0-5.06,3.79-7.1,7.65-7.1a11.11,11.11,0,0,1,6,1.67V6.8a16.37,16.37,0,0,0-6.63-1.39C93.31,5.41,87.48,8.8,87.48,16.64Z" />
+                                <path fill-rule="evenodd" fill="currentColor"
+                                    d="M129.36,5.84,122,17.07l-7.4-11.23h-4.28V27.43h4.62V14.11l5.71,8.69h2.68l5.7-8.66V27.43h4.63V5.84Zm11.48,21.59,1.6-4h9.87l1.57,4h4.78L149.87,5.84h-5l-8.83,21.59Zm6-15.61a7.16,7.16,0,0,0,.49-1.7,10.32,10.32,0,0,0,.46,1.7l3,7.74h-7Zm18.81,15.61V16.29c0-1,0-2.06-.09-3l10.05,14.1H180V5.84h-4.63V17c0,1,0,2.07.09,3L165.41,5.84h-4.35V27.43Z" />
+                            </svg>                </div>
+        
+                    </a>
+                    <div class="page-header__about-text">
+                        <p>
+                            Блог бригмана про компьютерное железо
+                        </p>
+                    </div>
+        
+                    <div class="page-header__links">
+                        <a href="#" class="page-header__link">
+                            О нас
+                        </a>
+                        <a href="#" class="page-header__link">
+                            Контакты
+                        </a>
+                    </div>
+                    <div class="page-header__theme-toggles">
+                        <button class="page-header__theme-toggle-btn page-header__theme-toggle-btn--light">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-light-theme">
+                                <use xlink:href="#light-theme"></use>
+                            </svg>
+                        </button>
+                        <div class="page-header__theme-tumbler">
+        
+                        </div>
+                        <button class="page-header__theme-toggle-btn page-header__theme-toggle-btn--dark">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-dark-theme">
+                                <use xlink:href="#dark-theme"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>        <main class="page-main">
 
 
 
@@ -7,24 +86,31 @@
     <div class="container">
         <div class="catalog__intro">
             <div class="catalog__intro-picture-block">
-                <div class="catalog__intro-picture-block-bg">
+                <div class="catalog__intro-picture-block-bg" style="--overlay-opacity: 0;">
 
 
                     <picture>
-                        <source srcset="img/catalog-intro-mobile.jpg" media="(max-width: 640px)">
-                        <img src="img/catalog-intro-bg.jpg" alt="MDN" class="catalog__intro-picture-block-image">
+                        <source srcset="img/comp-in-bag.jpg" media="(max-width: 640px)">
+                        <img src="img/comp-in-bag.jpg" alt="MDN" class="catalog__intro-picture-block-image">
                     </picture>
                 </div>
                 <div class="catalog__intro-top-row">
                     <h1 class="catalog__intro-heading">
+
+
+
                         <a href="#" class="catalog__intro-heading-link">
-                            Железо
+                            Комп в мешке
                             <div class="catalog__intro-heading-link-arrow">
                                 <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
                                     <use xlink:href="#arrow-down"></use>
                                 </svg>
                             </div>
+
                         </a>
+
+
+
                         <div class="catalog__intro-modal">
                             <div class="catalog__intro-modal-orb">
                                 <div class="catalog__intro-modal-orb-inner">
@@ -59,7 +145,7 @@
                                                 <a href="#" class="catalog__intro-modal-nav-link">
                                                     Сборка ПК
                                                 </a>
-                                                <a href="#" class="catalog__intro-modal-nav-link active">
+                                                <a href="#" class="catalog__intro-modal-nav-link">
                                                     Железо
                                                 </a>
                                                 <a href="#" class="catalog__intro-modal-nav-link">
@@ -68,7 +154,7 @@
                                                 <a href="#" class="catalog__intro-modal-nav-link">
                                                     Своими руками
                                                 </a>
-                                                <a href="#" class="catalog__intro-modal-nav-link">
+                                                <a href="#" class="catalog__intro-modal-nav-link active">
                                                     Комп в мешке
                                                 </a>
                                                 <a href="#" class="catalog__intro-modal-nav-link">
@@ -92,12 +178,14 @@
                             </div>
                         </div>
                     </h1>
+
+                    <img src="img/comp-logo.png" alt="" class="catalog__intro-illustration">
                 </div>
             </div>
             <div class="catalog__intro-filters-row">
                 <ul class="catalog__intro-categories-list">
                     <li class="catalog__intro-categories-list-item">
-                        <a href="#" class="catalog__intro-categories-link active">
+                        <a href="#" class="catalog__intro-categories-link ">
                             Все статьи
                             <span class="catalog__intro-categories-link-count">
                                 48
@@ -121,7 +209,7 @@
                         </a>
                     </li>
                     <li class="catalog__intro-categories-list-item">
-                        <a href="#" class="catalog__intro-categories-link">
+                        <a href="#" class="catalog__intro-categories-link active">
                             Комп в мешке
                             <span class="catalog__intro-categories-link-count">
                                 48
@@ -608,5 +696,81 @@
     </div>
 </section>
 
-{{/content}}
-{{/extend}}
+        </main>
+
+
+
+
+
+        <footer class="page-footer ">
+            <div class="container">
+                <div class="page-footer__row">
+                    <div class="page-footer__copyright">
+                        ©brigman, 2021
+                    </div>
+                    <a href="#" class="page-footer__made-by">
+                        Создание сайта
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 16">
+                            <path
+                                d="M35,3.88c.15.16,1.56,4,1.71,4.47a6.56,6.56,0,0,0,.61,1.45c.49.11.54-.39.68-.79.8-2.15,2-5.29,2.62-7.4.43-1,.46-1.3-.3-1.3s-.68.51-1,1.18C39,2.75,38,5.41,37.61,6.63c0,.16,0,.16-.19.16C36.79,5,36.05,2.75,35.33,1c-.19-.35-.53-.43-.76.36-.39,1.25-.92,2.74-1.33,4,0,0-.5,1.53-.54,1.61a5.09,5.09,0,0,1-.57-1.41C31.56,4,31.07,2.44,30.58,1c-.12-.28-.12-.44-.39-.6a1.57,1.57,0,0,0-.83-.08c-.76.13-.27.75-.12,1.22.92,2.54,2,5.6,3,8a.33.33,0,0,0,.11.15.28.28,0,0,0,.17.07.36.36,0,0,0,.18,0,.29.29,0,0,0,.15-.12C33,9.36,34.84,3.88,35,3.88Z" />
+                            <path
+                                d="M.15.47A.79.79,0,0,0,.18,1c.16.66-.3,8.22-.18,8.52a1.75,1.75,0,0,0,1.19.12c.18-.2.11-.39.11-.7,0-1.34.11-2.63.11-4,0-.51.08-.86.08-1.18s0-.27.07-.35A20.17,20.17,0,0,1,3,5.68c.23.47.68,1.18,1,1.73.46.86.69.27.8.07C5,7.13,7.07,3.41,7.22,3.33a40,40,0,0,1,.14,4.15c0,2-.23,2.24,1,2.15.38,0,.42-.31.38-.66V6.9c-.1-1.69-.17-3.61-.17-5.29,0-.2.07-.95.07-1.06A.73.73,0,0,0,8.23.3a.7.7,0,0,0-.49.09c-.26.16-.34.51-.53.75-.77,1.41-1.81,3-2.54,4.35-.26.47-.26.31-.49,0-.5-.75-1.14-2-1.6-2.79L1.67,1.14A3.46,3.46,0,0,0,1.18.39C.92.2.41.35.15.47Z" />
+                            <path
+                                d="M48.68,4.86a2.49,2.49,0,0,1,1.12-.54A2.38,2.38,0,0,1,51,4.39c1.22.55,1.37,2.39.84,3.29a2,2,0,0,1-.94.77,2,2,0,0,1-1.2.08,2.68,2.68,0,0,1-1.06-.48Zm0-1.34a26.54,26.54,0,0,1,0-3.09c0-.43-.15-.51-.54-.35-.92.39-.92.23-.79,1.09.08.44,0,5.49,0,6.2,0,1.4-.19,1.72,1.79,2.31a4.11,4.11,0,0,0,1.71,0A4.31,4.31,0,0,0,52.42,9c1.94-1.64,1.41-6.26-2.13-5.91a5.64,5.64,0,0,0-.92.11c-.12,0-.57.31-.63.31Z" />
+                            <path
+                                d="M21.86,9.56A3.6,3.6,0,0,0,22,8a10.82,10.82,0,0,1,0-1.61c.11,0,.23.2.46.44s2.13,2.27,2.43,2.5a.94.94,0,0,0,.37.22,1,1,0,0,0,.43,0c.27,0,.69,0,.84-.19,0-.28-.54-.71-.77-.95s-.52-.54-.79-.86a16.57,16.57,0,0,1-1.63-1.72c0-.08,2.08-1.89,2.47-2.23.15-.16.3-.2.27-.44a2.42,2.42,0,0,0-1.46,0c-.18.09-1.44,1.26-1.78,1.57-.11.12-.76.83-.84.79-.11-.36,0-5.26-.07-5.53S20.54.2,20.58.67a5.89,5.89,0,0,1,.11,1V8.46c0,.24-.08.95.08,1.06A2.37,2.37,0,0,0,21.86,9.56Z" />
+                            <path
+                                d="M12,6.35c.42-.12,1.84.23,1.9.62a6.63,6.63,0,0,1,0,1.26c-.27.35-2.1,1-2.7-.2a1.29,1.29,0,0,1,0-1.13,1.2,1.2,0,0,1,.34-.37A1.23,1.23,0,0,1,12,6.35Zm1.94-.48a3.42,3.42,0,0,0-1.18-.5,4.32,4.32,0,0,0-1.56.11,2.13,2.13,0,0,0-1.08.76,2.17,2.17,0,0,0-.44,1.27A2.28,2.28,0,0,0,10,8.8a2.19,2.19,0,0,0,1.05.8,3.47,3.47,0,0,0,2.25,0c.15-.08.46-.28.57-.32s.15.28.3.35a1.46,1.46,0,0,0,1-.19c.19-.19.23-.16.11-.43a2,2,0,0,1-.18-1.18V5a1.71,1.71,0,0,0-.27-1.14c-.73-1.48-5.1-.9-4.75.36S11.06,3.8,13,4c1,.11.93,1.13.93,1.83Z" />
+                            <path
+                                d="M58.91,5.68H55.76a1.67,1.67,0,0,1,.49-1,1.76,1.76,0,0,1,1.06-.46,1.55,1.55,0,0,1,.61.07,1.51,1.51,0,0,1,.53.32,1.31,1.31,0,0,1,.46,1.09Zm-3.23,1c.23-.12,3.67,0,4.3,0s.34-2.11-.8-3a3.13,3.13,0,0,0-1.6-.62,3,3,0,0,0-1.67.36,3.1,3.1,0,0,0-1.24,1.22,3.28,3.28,0,0,0-.41,1.71,3.3,3.3,0,0,0,.38,1.66A3.12,3.12,0,0,0,55.8,9.28c1,.72,3.76.68,4.1-.42.42-1.41-.57-.63-.92-.48a3.05,3.05,0,0,1-.92.24A2,2,0,0,1,55.68,6.7Z" />
+                            <path
+                                d="M41.87,5.68a1.61,1.61,0,0,1,.5-1,1.53,1.53,0,0,1,1.07-.43A1.39,1.39,0,0,1,45,5.68Zm-.15,1H46c.5,0,.42-.31.38-.7a3.21,3.21,0,0,0-.46-1.48A3.1,3.1,0,0,0,44.79,3.4a2.83,2.83,0,0,0-1.47-.35,2.91,2.91,0,0,0-1.45.45,3.15,3.15,0,0,0-1.16,1.24,3.31,3.31,0,0,0-.36,1.69,3.07,3.07,0,0,0,.37,1.66,2.82,2.82,0,0,0,1.19,1.18c1.3.83,3.84.48,4.07-.46,0-.27.19-1-.23-.79a4.68,4.68,0,0,1-1.61.6,2.27,2.27,0,0,1-1.71-.47C42.1,7.87,41.57,7.05,41.72,6.63Z" />
+                            <path
+                                d="M62.37,9.6c.23-.24.19-.35.19-.7V8c0-1.25-.23-3.33,1.18-3.64.3-.07.38.19.76.11a1.81,1.81,0,0,0,.5-.77c0-.6-.92-.71-1.76-.32-.26.12-.48.55-.68.58,0-.35.08-.5-.15-.81a2.08,2.08,0,0,0-.84.27c-.38.19-.45.19-.38.67s0,3.72,0,4.5C61.23,9.72,61.23,9.68,62.37,9.6Z" />
+                            <path
+                                d="M17.53,9.56V9.48a18.7,18.7,0,0,0,.08-2.9c0-.74.18-2,1-2.19.65-.24.68.38,1.11,0,1-1.07-.34-1.49-1.14-1.14s-.69.62-.92.7a1.77,1.77,0,0,1,0-.46c0-.2-.09-.2-.16-.32a1.6,1.6,0,0,0-.84.24c-.37.15-.49.19-.37.66a14.58,14.58,0,0,1,.07,2.19V8.42C16.42,9.6,16.27,9.68,17.53,9.56Z" />
+                            <path fill="#f9cc46"
+                                d="M34.68,10.82a20.1,20.1,0,0,0-4.45,1.09c-.45.2-.92.31-1.37.51-.92.35-1.79.66-2.7,1-.3.12-2.47.78-2.85.87-1.84.46-4.59,1-6.35.18-.84-.42-.92.9,1,1.38a7.58,7.58,0,0,0,3.35-.15c.92-.2,2-.55,2.9-.83L27,14c.23-.08.41-.16.68-.24l1.41-.43c.26-.08.46-.19.69-.28l1.45-.35c.26-.07.46-.15.69-.23a26.23,26.23,0,0,1,5.86-.63,12.82,12.82,0,0,1,1.71.2c.92.11.71-.39.11-.71A9.44,9.44,0,0,0,34.68,10.82Z" />
+                        </svg>            </a>
+                </div>
+            </div>
+        </footer>
+        <style>
+            .ie-placeholder {
+                z-index: 4000;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #202020;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+            }
+            .ie-placeholder__message {
+                font-size: 2rem;
+                line-height: 1.2;
+                font-weight: 500;
+                margin: auto;
+            }
+            @supports (display: grid) {
+                .ie-placeholder {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="ie-placeholder">
+            <div class="ie-placeholder__message">
+                Извините, ваш браузер не поддерживается
+            </div>
+        </div>        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="assets/js/backend.js"></script>
+    </div>
+</body>
+
+</html>
