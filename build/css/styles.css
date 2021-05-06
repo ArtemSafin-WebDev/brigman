@@ -2114,7 +2114,8 @@ select:-webkit-autofill:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-item-align: start;
-      align-self: flex-start; }
+      align-self: flex-start;
+  margin-right: 0.3rem; }
   @media only screen and (max-width: 640px) {
     .home__bottom-slider-card-btns {
       -webkit-box-orient: horizontal;
@@ -3309,7 +3310,7 @@ select:-webkit-autofill:focus {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 0.3rem;
-  cursor: default; }
+  cursor: pointer; }
   .catalog__intro-sorting-tumbler::before {
     content: '';
     width: 0.8rem;

@@ -15,6 +15,9 @@ import colorSchemes from './colorSchemes';
 import catalogMenuOrb from './catalogMenuOrb';
 import catalogMenu from './catalogMenu';
 import articleGallery from './articleGallery';
+import mediaModals from './mediaModals';
+import catalogSorting from './catalogSorting';
+
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -33,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
     catalogMenuOrb();
     catalogMenu();
     articleGallery();
+    mediaModals();
+    catalogSorting();
+    
 });
 
 window.addEventListener('load', function() {
