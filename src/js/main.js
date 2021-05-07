@@ -17,6 +17,7 @@ import catalogMenu from './catalogMenu';
 import articleGallery from './articleGallery';
 import mediaModals from './mediaModals';
 import catalogSorting from './catalogSorting';
+import cookies from './cookies';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     articleGallery();
     mediaModals();
     catalogSorting();
+    cookies();
     
 });
 

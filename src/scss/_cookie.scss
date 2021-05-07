@@ -1,0 +1,70 @@
+.cookies {
+    position: fixed;
+    z-index: 300;
+    left: 0;
+    bottom: 5rem;
+    pointer-events: none;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility 0s linear .3s;
+    .cookies-panel-shown & {
+       opacity: 1;
+       visibility: inherit;
+    }
+
+    @include breakpoint(mobile) {
+        bottom: 2rem;
+    }
+}
+
+.cookies__inner {
+    box-shadow: 0px 0px 2.4rem var(--primary-color);
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2.8rem;
+    background-color: var(--primary-color);
+    color: white;
+    pointer-events: initial;
+
+    @include breakpoint(mobile) {
+        padding: 1.5rem 2rem;
+    }
+}
+
+.cookies__text {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    width: 50%;
+    flex-grow: 1;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+    a {
+        border-bottom: 1px solid currentColor;
+
+        transition: color 0.2s, border-color 0.2s;
+
+        .no-touch &:hover,
+        .touch &:active {
+            border-color: transparent;
+        }
+    }
+}
+
+.cookies__close-btn {
+    margin-left: 3rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+}
