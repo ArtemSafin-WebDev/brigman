@@ -50,21 +50,9 @@ export default function selectTheme() {
         }
     })
 
-    setLightTheme();
+    setDarkTheme();
 
-    let mql = window.matchMedia('(prefers-color-scheme: light)');
-
-    const themeHandler = mq => {
-        if (mq.matches) {
-            setLightTheme();
-        } else {
-            setDarkTheme();
-        }
-    }
-
-    themeHandler(mql);
-
-    mql.addListener(themeHandler);
+    
 
 
     if (sessionStorage.getItem('theme') === 'dark') {

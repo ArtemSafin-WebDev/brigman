@@ -17,6 +17,14 @@
     .swiper-container {
         overflow: visible;
     }
+
+    &.slider-with-autoplay {
+        .swiper-wrapper {
+            transition-timing-function: linear !important;
+        }
+    }
+
+   
     .swiper-slide {
         display: flex;
         flex-direction: color;

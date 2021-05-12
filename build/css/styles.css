@@ -1958,6 +1958,9 @@ select:-webkit-autofill:focus {
       margin-bottom: 4.5rem; } }
   .home__top-slider .swiper-container {
     overflow: visible; }
+  .home__top-slider.slider-with-autoplay .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+            transition-timing-function: linear !important; }
   .home__top-slider .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
