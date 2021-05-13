@@ -31,4 +31,34 @@ export default function catalogMenu() {
         event.preventDefault();
         closeMenu();
     })
+
+    const navLinks = Array.from(document.querySelectorAll('.catalog__intro-modal-nav-link'));
+    const images = Array.from(document.querySelectorAll('.catalog__intro-modal-menu-image'))
+    const initialActiveLinkIndex = navLinks.findIndex(link => link.classList.contains('active'));
+
+    const setActiveImage = index => {
+        images.forEach(image => image.classList.remove('active'));
+        images[index].classList.add('active');
+    }
+
+    if (initialActiveLinkIndex !== -1) {
+        setActiveImage(initialActiveLinkIndex)
+    } else {
+        setActiveImage(0);
+    }
+
+
+    navLinks.forEach((link, linkIndex) => {
+        link.addEventListener('mouseleave', () => {
+            if (initialActiveLinkIndex !== -1) {
+                setActiveImage(initialActiveLinkIndex)
+            } else {
+                setActiveImage(0);
+            }
+        })
+
+        link.addEventListener('mouseenter', () => {
+            setActiveImage(linkIndex);
+        })
+    })
 }

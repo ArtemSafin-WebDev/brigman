@@ -934,10 +934,33 @@
     }
 }
 
+.catalog__intro-modal-menu-image-container {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 56.25%;
+    }
+}
+
 .catalog__intro-modal-menu-image {
-    display: block;
-    height: auto;
-    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility 0s linear .3s;
+    z-index: 5;
+
+    &.active {
+        opacity: 1;
+        visibility: inherit;
+        transition: opacity .3s, visibility .3s;
+        z-index: 10;
+    }
 }
 
 .catalog__intro-filters-row {

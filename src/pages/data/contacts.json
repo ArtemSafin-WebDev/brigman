@@ -3,5 +3,6 @@
     "alwaysDarkHeader": false,
     "hasFooter": true,
     "noMobileOrb": true,
-    "articleFooter": false
+    "articleFooter": false,
+    "contactsPage": true
 }

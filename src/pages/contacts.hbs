@@ -72,7 +72,7 @@
                     </ul>
                 </div>
             </div>
-            <form action="/" method="POST" class="contacts__form" data-need-validation>
+            <form action="/" method="POST" class="contacts__form" data-need-validation id="contacts-form">
                 <h2 class="contacts__form-heading">
                     Напишите нам
                 </h2>
@@ -92,15 +92,23 @@
                 </div>
                 <div class="contacts__form-controls">
                     <div class="contacts__form-policy">
-                        Нажимая “Отправить”, вы соглашаетесь с политикой конфиденциальности
+                        Нажимая “Отправить”, вы соглашаетесь с <a href="#">
+                            политикой конфиденциальности
+                        </a>
                     </div>
-                    <div class="contacts__form-submit-wrapper">
+                    <div class="contacts__form-message-wrapper">
+                        <div class="contacts__form-message">
+                            Спасибо!<br> Ваше сообщение отправлено
+                        </div>
+                        <div class="contacts__form-submit-wrapper">
 
 
-                        <button type="submit" class="contacts__form-submit">
-                            Отправить
-                        </button>
+                            <button type="submit" class="contacts__form-submit">
+                                Отправить
+                            </button>
+                        </div>
                     </div>
+
                 </div>
             </form>
         </div>

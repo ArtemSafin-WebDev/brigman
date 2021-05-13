@@ -200,6 +200,8 @@
         color: var(--text-color);
     }
 
+    
+
     &:first-child {
         border-top-left-radius: 1.6rem;
         border-bottom-left-radius: 1.6rem;
@@ -222,7 +224,8 @@
     }
 
     .no-touch &:hover,
-    .touch &:active {
+    .touch &:active,
+    &.active {
         transform: translateY(0.8rem);
       
         border-color: var(--primary-color);
@@ -234,6 +237,17 @@
         }
         @include breakpoint(mobile) {
             transform: translateY(0.4rem);
+        }
+    }
+
+    &.active {
+        border-color: var(--btn-borders-color);
+        box-shadow: 0 0 2.4rem var(--catalog-controls-shadow-color);
+        pointer-events: none;
+        &::before {
+            opacity: 1;
+            background-color: var(--bg-color);
+            
         }
     }
 }
