@@ -6,6 +6,7 @@ export default function colorSchemes() {
     const colorSchemes = ['blue', 'red', 'green', 'orange'];
     let schemeIndex = 0;
     let schemeSelected = false;
+    const toasty = document.querySelector('.toasty')
 
     logo.addEventListener('mouseenter', () => {
         if (!schemeSelected) {
@@ -22,6 +23,12 @@ export default function colorSchemes() {
                 document.body.classList.add(`color-theme-${colorSchemes[schemeIndex + 1]}`);
                 schemeIndex = schemeIndex + 1;
             } else {
+                if (toasty) {
+                    toasty.classList.add('active');
+                    setTimeout(() => {
+                        toasty.classList.remove('active');
+                    }, 2000)
+                }
                 schemeSelected = false;
                 schemeIndex = 0;
             }

@@ -5338,3 +5338,99 @@ textarea.contacts__form-input {
     z-index: 5;
     -webkit-transform: translateY(0.5rem);
             transform: translateY(0.5rem); }
+
+.toasty {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1200;
+  -webkit-transition: opacity .4s, visibility 0s linear .4s;
+  transition: opacity .4s, visibility 0s linear .4s;
+  opacity: 0;
+  visibility: hidden; }
+  @media only screen and (max-width: 640px) {
+    .toasty {
+      display: none; } }
+  .toasty.active {
+    -webkit-transition: opacity .4s, visibility .4s;
+    transition: opacity .4s, visibility .4s;
+    opacity: 1;
+    visibility: inherit; }
+
+.toasty__victor {
+  width: 50rem;
+  position: relative;
+  position: absolute;
+  bottom: -7rem;
+  right: -7rem;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%); }
+  .toasty.active .toasty__victor {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); }
+  .toasty__victor::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%; }
+  .toasty__victor::after {
+    content: '';
+    position: absolute;
+    left: -3rem;
+    bottom: 0;
+    width: 25rem;
+    height: 25rem;
+    z-index: 5;
+    background-image: url("../img/finger-sprite.png");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-animation-name: finger;
+            animation-name: finger;
+    -webkit-animation-duration: .7s;
+            animation-duration: .7s;
+    -webkit-animation-timing-function: steps(2);
+            animation-timing-function: steps(2);
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+
+.toasty__victor-message {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  margin-top: 5rem;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap; }
+
+@-webkit-keyframes finger {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 200% 0; } }
+
+@keyframes finger {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 200% 0; } }
+
+.toasty__victor-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right bottom;
+     object-position: right bottom; }
