@@ -18,6 +18,7 @@ import articleGallery from './articleGallery';
 import mediaModals from './mediaModals';
 import catalogSorting from './catalogSorting';
 import cookies from './cookies';
+import mobileSettings from './mobileSettings';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     mediaModals();
     catalogSorting();
     cookies();
-    
+    mobileSettings();
 });
 
 window.addEventListener('load', function() {
