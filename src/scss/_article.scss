@@ -118,7 +118,7 @@
 .article__intro-image {
     display: block;
     height: auto;
-
+    width: 100%;
     @include objectFitCover();
 }
 

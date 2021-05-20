@@ -4008,6 +4008,7 @@ select:-webkit-autofill:focus {
 .article__intro-image {
   display: block;
   height: auto;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
