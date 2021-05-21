@@ -19,6 +19,7 @@ export default function homeBottomSlider() {
             speed: 1000,
             preventInteractionOnTransition: false,
             loop: true,
+            threshold: 5,
             navigation: {
                 nextEl: element.querySelector('.home__bottom-slider-arrow--next'),
                 prevEl: element.querySelector('.home__bottom-slider-arrow--prev')
