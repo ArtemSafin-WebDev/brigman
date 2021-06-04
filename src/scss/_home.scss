@@ -18,13 +18,12 @@
         overflow: visible;
     }
 
-    &.slider-with-autoplay {
-        .swiper-wrapper {
-            transition-timing-function: linear !important;
-        }
-    }
+    // &.slider-with-autoplay {
+    //     .swiper-wrapper {
+    //         transition-timing-function: linear !important;
+    //     }
+    // }
 
-   
     .swiper-slide {
         display: flex;
         flex-direction: color;
@@ -191,7 +190,7 @@
 .home__bottom-slider-pagination-bullet {
     width: 1rem;
     flex-grow: 1;
-    height: .2rem;
+    height: 0.2rem;
     position: relative;
     margin-right: 0.8rem;
     background-color: var(--home-bottom-slider-pagination-bullet-bg);
@@ -239,6 +238,7 @@
         border-radius: 1.6rem;
         border: 1px solid var(--btn-borders-color);
         z-index: -1;
+        background: var(--btn-borders-color);
     }
     &--prev {
         margin-right: 16rem;
@@ -299,7 +299,6 @@
     @include breakpoint(mobile) {
         flex-direction: column;
     }
-  
 
     .no-touch &:hover {
         .home__bottom-slider-card-image {
@@ -345,7 +344,6 @@
             bottom: 100%;
             padding-top: 0;
             padding-bottom: 1rem;
-            
         }
     }
 
@@ -353,8 +351,7 @@
         .sharing-dropdown {
             opacity: 1;
             visibility: inherit;
-            transition: opacity .3s, visibility .3s;
-            
+            transition: opacity 0.3s, visibility 0.3s;
         }
     }
     @include breakpoint(mobile) {
@@ -474,7 +471,7 @@
 
         font-size: 1.1rem;
         line-height: 1.4rem;
-        padding: 0.6rem .7rem;
+        padding: 0.6rem 0.7rem;
     }
 }
 
@@ -559,4 +556,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.home__bottom-slider-card-recent {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.home__top-slider-progress {
+    margin-top: 3.8rem;
+    height: 0.2rem;
+    position: relative;
+    background-color: var(--home-bottom-slider-pagination-bullet-bg);
+    @include breakpoint(mobile) {
+        margin-top: 2rem;
+    }
+    .swiper-pagination-progressbar-fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--home-bottom-slider-pagination-bullet-thumb);
+        transform-origin: left center;
+        transform: scaleX(0);
+        box-shadow: 0px 0px 2.4rem var(--progress-glow);
+    }
 }

@@ -15,13 +15,15 @@
     @include breakpoint(mobile) {
         --content-padding: 1.6rem;
     }
+
+   
 }
 
 body {
     --primary-color: #9c5de0;
     --primary-color-hover: #4e3070;
     --bg-color: #0c001c;
-    --btn-borders-color: rgba(156, 93, 224, 0.2);
+    --btn-borders-color: #402260;
     --text-color: white;
     --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
     --theme-btn-dark-color-active: #949ed3;
@@ -64,7 +66,7 @@ body {
     --primary-color: #9c5de0;
     --primary-color-hover: #4e3070;
     --bg-color: #efe6fb;
-    --btn-borders-color: rgba(201, 183, 220, 0.25);
+    --btn-borders-color: #e1cef5;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #e5cdff;
     --theme-btn-dark-color-active: #9c5de0;
@@ -106,7 +108,7 @@ body {
         --text-color: white;
         --primary-color: #9c5de0;
         --primary-color-hover: #4e3070;
-        --btn-borders-color: rgba(156, 93, 224, 0.2);
+        --btn-borders-color: #402260;
         --bg-color: #100916;
         --home-mobile-about-text: rgba(255, 255, 255, 0.32);
         --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
@@ -122,7 +124,7 @@ body {
     --primary-color: #4200ff;
     --primary-color-hover: #351392;
     --bg-color: #070019;
-    --btn-borders-color: rgba(66, 0, 255, 0.5);
+    --btn-borders-color: #24008c;
     --text-color: white;
     --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
     --theme-btn-dark-color-active: #949ed3;
@@ -150,7 +152,7 @@ body {
     --primary-color: #4200ff;
     --primary-color-hover: #351392;
     --bg-color: #efe6fb;
-    --btn-borders-color: rgba(66, 0, 255, 0.18);
+    --btn-borders-color: #D3C3FF;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #d4c4ff;
     --theme-btn-dark-color-active: #4200ff;
@@ -178,7 +180,7 @@ body {
         --text-color: white;
         --primary-color: #4200ff;
         --primary-color-hover: #351392;
-        --btn-borders-color: rgba(66, 0, 255, 0.5);
+        --btn-borders-color: #24008c;
         --bg-color: #070019;
         --home-mobile-about-text: rgba(255, 255, 255, 0.32);
         --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
@@ -194,7 +196,7 @@ body {
     --primary-color: #ff4343;
     --primary-color-hover: #941e1e;
     --bg-color: #190707;
-    --btn-borders-color: rgba(255, 67, 67, 0.5);
+    --btn-borders-color: #8c2525;
     --text-color: white;
     --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
     --theme-btn-dark-color-active: #949ed3;
@@ -223,7 +225,7 @@ body {
     --primary-color: #ff4343;
     --primary-color-hover: #941e1e;
     --bg-color: #ffe3e3;
-    --btn-borders-color: rgba(255, 67, 67, 0.18);
+    --btn-borders-color: #FFD3D3;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #ffc6c6;
     --theme-btn-dark-color-active: #ff4343;
@@ -251,7 +253,7 @@ body {
         --text-color: white;
         --primary-color: #ff4343;
         --primary-color-hover: #941e1e;
-        --btn-borders-color: rgba(255, 67, 67, 0.5);
+        --btn-borders-color: #8c2525;
         --bg-color: #190707;
         --home-mobile-about-text: rgba(255, 255, 255, 0.32);
         --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
@@ -267,7 +269,7 @@ body {
     --primary-color: #409133;
     --primary-color-hover: #216816;
     --bg-color: #071206;
-    --btn-borders-color: rgba(64, 145, 51, 0.5);
+    --btn-borders-color: #23511c;
     --text-color: white;
     --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
     --theme-btn-dark-color-active: #949ed3;
@@ -296,7 +298,7 @@ body {
     --primary-color: #409133;
     --primary-color-hover: #216816;
     --bg-color: #dfeddd;
-    --btn-borders-color: rgba(64, 145, 51, 0.18);
+    --btn-borders-color: #C2DBBD;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #bdddb8;
     --theme-btn-dark-color-active: #409133;
@@ -324,7 +326,7 @@ body {
         --text-color: white;
         --primary-color: #409133;
         --primary-color-hover: #216816;
-        --btn-borders-color: rgba(64, 145, 51, 0.5);
+        --btn-borders-color: #23511c;
         --bg-color: #071206;
         --home-mobile-about-text: rgba(255, 255, 255, 0.32);
         --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
@@ -340,7 +342,7 @@ body {
     --primary-color: #ff813a;
     --primary-color-hover: #e6661c;
     --bg-color: #190900;
-    --btn-borders-color: rgba(255, 129, 58, 0.5);
+    --btn-borders-color: #8c451d;
     --text-color: white;
     --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
     --theme-btn-dark-color-active: #949ed3;
@@ -355,8 +357,8 @@ body {
     --home-bottom-slider-btn-text-color: rgba(255, 255, 255, 0.3);
     --home-bottom-slider-pale-text: rgba(255, 255, 255, 0.5);
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
-    --home-bottom-slider-pagination-bullet-thumb: rgba(255, 129, 58, .6);
-    --progress-glow: rgba(66, 0, 255, .6);
+    --home-bottom-slider-pagination-bullet-thumb: rgba(255, 129, 58, 0.6);
+    --progress-glow: rgba(66, 0, 255, 0.6);
 
     --catalog-controls-border-color: rgba(255, 129, 58, 0.5);
     --catalog-controls-bg-color: #190900;
@@ -369,7 +371,7 @@ body {
     --primary-color: #ff813a;
     --primary-color-hover: #e6661c;
     --bg-color: #ffece2;
-    --btn-borders-color: #ffd9c4;
+    --btn-borders-color: #ffccaf;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #fad1bb;
     --theme-btn-dark-color-active: #ff813a;
@@ -384,20 +386,20 @@ body {
     --home-bottom-slider-btn-text-color: #3a3a3a;
     --home-bottom-slider-pale-text: rgba(58, 58, 58, 0.5);
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 129, 58, 0.1);
-    --home-bottom-slider-pagination-bullet-thumb: rgba(255, 129, 58, .6);
+    --home-bottom-slider-pagination-bullet-thumb: rgba(255, 129, 58, 0.6);
     --progress-glow: rgba(255, 89, 0, 0.6);
 
     --catalog-controls-border-color: #ffd9c4;
     --catalog-controls-bg-color: #ffece2;
     --catalog-controls-shadow-color: rgba(255, 129, 58, 0.7);
 
-    --footer-border-color: rgba(255, 129, 58, .4);
+    --footer-border-color: rgba(255, 129, 58, 0.4);
 
     .page-header--always-dark {
         --text-color: white;
         --primary-color: #ff813a;
         --primary-color-hover: #e6661c;
-        --btn-borders-color: rgba(255, 129, 58, 0.5);
+        --btn-borders-color: #8c451d;
         --bg-color: #190900;
         --home-mobile-about-text: rgba(255, 255, 255, 0.32);
         --theme-btn-dark-color: rgba(255, 255, 255, 0.301);
@@ -428,7 +430,7 @@ html {
     }
 
     @include breakpoint(supersmall-mobile) {
-        font-size: 9px;
+        font-size: 8px;
     }
 }
 

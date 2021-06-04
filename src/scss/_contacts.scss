@@ -203,7 +203,7 @@
         border: 1px solid var(--catalog-controls-border-color);
         z-index: -1;
         margin-top: 0.7rem;
-
+        background-color: var(--btn-borders-color);
         @include breakpoint(mobile) {
             border-radius: 0.6rem;
         }
@@ -440,7 +440,7 @@ textarea.contacts__form-input {
         border: 1px solid var(--catalog-controls-border-color);
         z-index: -1;
         margin-top: 0.7rem;
-
+        background-color: var(--btn-borders-color);
         @include breakpoint(mobile) {
             border-radius: 0.6rem;
         }

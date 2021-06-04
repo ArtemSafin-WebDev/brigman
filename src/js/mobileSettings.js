@@ -9,6 +9,13 @@ export default function mobileSettings() {
         mobileSettings.classList.toggle('open');
     });
 
+    mobileSettings.addEventListener('mouseenter', () => {
+        mobileSettings.classList.add('open');
+    })
+    mobileSettings.addEventListener('mouseleave', () => {
+        mobileSettings.classList.remove('open');
+    })
+
     document.addEventListener('click', event => {
         if (event.target.matches('.page-header__mobile-settings') || event.target.closest('.page-header__mobile-settings')) return;
         mobileSettings.classList.remove('open');

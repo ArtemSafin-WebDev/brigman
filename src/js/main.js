@@ -19,6 +19,7 @@ import mediaModals from './mediaModals';
 import catalogSorting from './catalogSorting';
 import cookies from './cookies';
 import mobileSettings from './mobileSettings';
+import scrollUp from './scrollUp';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     catalogSorting();
     cookies();
     mobileSettings();
+    scrollUp();
 });
 
 window.addEventListener('load', function() {

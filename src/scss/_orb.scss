@@ -8,6 +8,10 @@
     position: fixed;
     z-index: -1;
 
+    .light-theme & {
+        display: none;
+    }
+
     .no-mobile-orb & {
         @include breakpoint(mobile) {
             display: none;

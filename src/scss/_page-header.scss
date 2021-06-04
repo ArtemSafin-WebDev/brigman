@@ -62,6 +62,7 @@
         width: 100%;
         height: 100%;
         border: 1px solid var(--btn-borders-color);
+        background-color: var(--btn-borders-color);
         margin-top: 0.8rem;
         z-index: -1;
         border-radius: 1.6rem;
@@ -91,7 +92,7 @@
         height: 100%;
         background-color: var(--bg-color);
         z-index: -1;
-        opacity: 0.8;
+        opacity: 1;
     }
 
     @include breakpoint(mobile) {
@@ -132,7 +133,7 @@
     align-items: center;
     margin-left: auto;
     position: relative;
-    margin-right: 3.4rem;
+    margin-right: 3rem;
 
     @include breakpoint(mobile) {
         margin-right: 0;
@@ -149,6 +150,7 @@
         height: 100%;
         margin-top: 0.8rem;
         border: 1px solid var(--btn-borders-color);
+        background: var(--btn-borders-color);
         border-radius: 1.6rem;
         z-index: -1;
         clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
@@ -170,24 +172,14 @@
     border: 1px solid var(--btn-borders-color);
     color: var(--text-color);
     transition: all 0.3s;
-
-    margin-left: -1px;
+    
+    display: block;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--bg-color);
-        z-index: -1;
-        opacity: 0.8;
-        transition: opacity 0.2s, background-color 0.2s;
-    }
-
+    background-color: var(--bg-color);
+    transition: opacity 0.2s, background-color 0.2s, transform .2s, color .2s, border-color .2s;
+   
     @include breakpoint(mobile) {
         padding: 0.8rem 1.4rem;
         font-size: 1.2rem;
@@ -203,6 +195,7 @@
         border-top-left-radius: 1.6rem;
         border-bottom-left-radius: 1.6rem;
         margin-left: 0;
+        // margin-right: 3px;
 
         @include breakpoint(mobile) {
             border-top-left-radius: 0.6rem;
@@ -224,13 +217,13 @@
     .touch &:active,
     &.active {
         transform: translateY(0.8rem);
-
+        background-color: var(--primary-color);
         border-color: var(--primary-color);
         color: white;
 
         &::before {
             opacity: 1;
-            background-color: var(--primary-color);
+           
         }
         @include breakpoint(mobile) {
             transform: translateY(0.4rem);
@@ -341,7 +334,7 @@
 }
 
 .page-header__mobile-settings {
-    display: none;
+    position: relative;
 
     &.open {
         .page-header__mobile-settings-dropdown {
@@ -357,13 +350,11 @@
         .page-header__mobile-settings-btn-inner {
             box-shadow: 0px 0px 1.1rem var(--catalog-controls-shadow-color);
         }
-        
     }
 
     @include breakpoint(mobile) {
         display: block;
         margin-left: 0.8rem;
-        position: relative;
     }
 }
 
@@ -377,6 +368,11 @@
     visibility: hidden;
     transition: opacity 0.4s, visibility 0s linear 0.4s;
     z-index: 50;
+
+    @include breakpointMF(small-tablet) {
+        width: 34rem;
+        padding-top: 2.5rem;
+    }
 }
 
 .page-header__mobile-settings-dropdown-inner {
@@ -455,6 +451,7 @@
 
 .page-header__mobile-settings-btn {
     position: relative;
+    cursor: pointer;
     &::before {
         content: '';
         position: absolute;
@@ -467,7 +464,7 @@
         border-radius: 1.6rem;
         z-index: -1;
         clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
-
+        background: var(--btn-borders-color);
         @include breakpoint(mobile) {
             margin-top: 0.4rem;
             border-radius: 0.6rem;
@@ -486,10 +483,27 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition: box-shadow .2s;
+    transition: box-shadow 0.2s;
     position: relative;
     z-index: 1;
-    
+
+    .icon-gear {
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: var(--text-color);
+        display: block;
+    }
+
+    @include breakpointMF(small-tablet) {
+        width: 6.6rem;
+        height: 6rem;
+        border-radius: 1.6rem;
+
+        .icon-gear {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
 }
 
 .page-header__mobile-settings-btn-cross {
@@ -504,13 +518,18 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
 
     svg {
         width: 1.2rem;
         height: 1.2rem;
         fill: var(--text-color);
-        transition: fill .2s;
+        transition: fill 0.2s;
+
+        @include breakpointMF(small-tablet) {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
     }
 }
 
@@ -530,7 +549,8 @@
     position: relative;
     display: block;
     transition: box-shadow 0.2s;
-
+    -webkit-user-drag: none;
+    user-drag: none;
     &::before {
         content: '';
         position: absolute;

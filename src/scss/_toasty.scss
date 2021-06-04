@@ -9,7 +9,7 @@
     transition: opacity .4s, visibility 0s linear .4s;
     opacity: 0;
     visibility: hidden;
-
+    color: white;
     @include breakpoint(mobile) {
         display: none;
     }

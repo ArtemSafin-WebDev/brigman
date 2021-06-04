@@ -15,16 +15,23 @@
     position: relative;
 
     color: var(--catalog-intro-block-heading-color);
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     padding-top: 10rem;
     padding-bottom: 2rem;
+
+    .catalog-menu-was-opened & {
+        margin-bottom: 2rem;
+    }
 
     @include breakpoint(mobile) {
         min-height: 42rem;
         padding: 0;
         padding-top: 8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 5rem;
         padding-bottom: 1rem;
+        .catalog-menu-was-opened & {
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -101,9 +108,6 @@
     display: flex;
     align-items: center;
 
-    
-
-
     @include breakpoint(mobile) {
         display: block;
     }
@@ -111,8 +115,9 @@
     .no-touch &:hover {
         .catalog__intro-heading-link-arrow {
             background-color: var(--primary-color);
+            border-color: var(--primary-color);
 
-            svg {
+            & > svg {
                 fill: white;
             }
         }
@@ -131,40 +136,78 @@
         order: -1;
         margin-left: 0;
         width: 12rem;
-        
     }
-    
 }
 
 .catalog__intro-heading-link-arrow {
-    width: 6rem;
-    height: 6rem;
-    background-color: var(--catalog-intro-arrow-bg);
+    width: 6.4rem;
+    height: 6.4rem;
+    border: 1px solid var(--text-color);
     border-radius: 50%;
+
     display: inline-flex;
     vertical-align: top;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 3rem;
+    margin-right: 2.5rem;
     flex-shrink: 0;
-    transition: background-color 0.2s;
-
+    transition: background-color 0.3s, border-color .3s;
+    position: relative;
     @include breakpoint(mobile) {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-left: 1.1rem;
-        margin-top: .9rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-left: 0;
+        margin-right: .5rem;
     }
-    svg {
-        fill: var(--catalog-intro-arrow-icon);
-        width: 1.7rem;
+    & > svg {
+        fill: var(--text-color);
+        width: 3.5rem;
         height: 1rem;
-        transition: fill 0.2s;
+        transition: fill 0.3s;
 
         @include breakpoint(mobile) {
-            width: 0.9rem;
-            height: 0.6rem;
+            width: 2.2rem;
+            height: 0.8rem;
+        }
+    }
+}
+
+.catalog__intro-heading-link-helper {
+    position: absolute;
+    top: 100%;
+    left: 9rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--home-bottom-slider-pale-text);
+    letter-spacing: 0;
+    text-transform: none;
+    margin-top: -1rem;
+
+    @include breakpoint(mobile) {
+        left: 6.2rem;
+        margin-top: 0;
+    }
+
+    .catalog-menu-was-opened & {
+        display: none;
+    }
+    
+    svg {
+        fill: currentColor;
+        position: absolute;
+        right: 100%;
+        bottom: 100%;
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: -1.38rem;
+        margin-right: 1rem;
+
+        @include breakpoint(mobile) {
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: -2.3rem;
         }
     }
 }
@@ -306,6 +349,7 @@
         border-radius: 1.6rem;
         border: 1px solid var(--catalog-controls-border-color);
         margin-top: 1rem;
+        background-color: var(--btn-borders-color);
         z-index: -1;
         pointer-events: none;
 
@@ -427,7 +471,7 @@
         margin-top: 1rem;
         z-index: -1;
         pointer-events: none;
-
+        background-color: var(--btn-borders-color);
         @include breakpoint(mobile) {
             border-radius: 0.6rem;
             margin-top: 0.5rem;
@@ -633,7 +677,7 @@
         margin-top: 1rem;
         z-index: -1;
         pointer-events: none;
-
+        background-color: var(--btn-borders-color);
         @include breakpoint(mobile) {
             border-radius: 0.6rem;
             margin-top: 0.5rem;
@@ -752,7 +796,6 @@
 
     @include breakpoint(mobile) {
         margin-bottom: 2rem;
-      
     }
 }
 
@@ -811,7 +854,7 @@
     flex-direction: column;
     transition: background-color 0.2s;
     border-radius: 50%;
-    background-color: var(--catalog-popup-btn-bg);
+    background-color: var(--btn-borders-color);
 
     @include breakpoint(mobile) {
         width: 4.3rem;
@@ -952,13 +995,13 @@
     object-fit: cover;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .3s, visibility 0s linear .3s;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
     z-index: 5;
 
     &.active {
         opacity: 1;
         visibility: inherit;
-        transition: opacity .3s, visibility .3s;
+        transition: opacity 0.3s, visibility 0.3s;
         z-index: 10;
     }
 }
