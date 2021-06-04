@@ -3,7 +3,7 @@ export default function colorSchemes() {
 
     if (!logo) return;
 
-    const colorSchemes = ['blue', 'red', 'green', 'orange'];
+    const colorSchemes = ['blue', 'red', 'green', 'orange', 'grayscale'];
     let schemeIndex = 0;
     let schemeSelected = false;
     const toasty = document.querySelector('.toasty');
