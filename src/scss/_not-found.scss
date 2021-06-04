@@ -34,6 +34,10 @@
         height: auto;
         display: block;
         fill: var(--bg-color);
+
+        .color-theme-grayscale.light-theme & {
+            fill: rgba(black, .04);
+        }
     }
 }
 

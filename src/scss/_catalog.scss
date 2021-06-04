@@ -122,6 +122,16 @@
             }
         }
     }
+    .color-theme-grayscale.no-touch &:hover {
+        .catalog__intro-heading-link-arrow {
+            background-color: var(--text-color);
+            border-color: var(--text-color);
+
+            & > svg {
+                fill: var(--bg-color);
+            }
+        }
+    }
 }
 
 .catalog__intro-illustration {
@@ -152,13 +162,13 @@
     justify-content: center;
     margin-right: 2.5rem;
     flex-shrink: 0;
-    transition: background-color 0.3s, border-color .3s;
+    transition: background-color 0.3s, border-color 0.3s;
     position: relative;
     @include breakpoint(mobile) {
         width: 4.5rem;
         height: 4.5rem;
         margin-left: 0;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
     }
     & > svg {
         fill: var(--text-color);
@@ -193,7 +203,7 @@
     .catalog-menu-was-opened & {
         display: none;
     }
-    
+
     svg {
         fill: currentColor;
         position: absolute;

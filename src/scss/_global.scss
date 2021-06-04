@@ -15,8 +15,6 @@
     @include breakpoint(mobile) {
         --content-padding: 1.6rem;
     }
-
-   
 }
 
 body {
@@ -120,6 +118,80 @@ body {
     }
 }
 
+.color-theme-grayscale {
+    --primary-color: #fff;
+    --primary-color-hover: #fff;
+    --bg-color: #000000;
+    --btn-borders-color: #1b1b1b;
+    --text-color: white;
+    --theme-btn-dark-color: #3a3a3a;
+    --theme-btn-dark-color-active: white;
+    --theme-btn-light-color: #3a3a3a;
+    --theme-btn-light-color-active: white;
+    --tumbler-bg-color: #1b1b1b;
+    --tumbler-circle-color: white;
+    --orb-color: rgba(255, 255, 255, 0.2);
+    --orb-mobile-color: rgba(255, 255, 255, 0.3);
+    --home-mobile-about-text: rgba(255, 255, 255, 0.5);
+    --home-bottom-slider-btn-color: #0f0f0f;
+    --home-bottom-slider-btn-text-color: rgba(255, 255, 255, 0.5);
+    --home-bottom-slider-pale-text: rgba(255, 255, 255, 0.5);
+    --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
+    --home-bottom-slider-pagination-bullet-thumb: white;
+    --progress-glow: white;
+
+    --catalog-controls-border-color: #1b1b1b;
+    --catalog-controls-bg-color: #000000;
+    --catalog-controls-shadow-color: white;
+
+    --footer-border-color: rgba(255, 255, 255, 0.7);
+}
+
+.color-theme-grayscale.light-theme {
+    --primary-color: #000000;
+    --primary-color-hover: #000000;
+    --bg-color: #ffffff;
+    --btn-borders-color: #e7e7e7;
+    --text-color: #000000;
+    --theme-btn-dark-color: #818181;
+    --theme-btn-dark-color-active: #000000;
+    --theme-btn-light-color: #818181;
+    --theme-btn-light-color-active: #000000;
+    --tumbler-bg-color: rgba(58, 58, 58, 0.2);
+    --tumbler-circle-color: #000000;
+    --orb-color: #ffffff;
+    --orb-mobile-color: #ffffff;
+    --home-mobile-about-text: rgba(58, 58, 58, 0.5);
+    --home-bottom-slider-btn-color: #e7e7e7;
+    --home-bottom-slider-btn-text-color: rgba(58, 58, 58, 0.5);
+    --home-bottom-slider-pale-text: rgba(58, 58, 58, 0.5);
+
+    --home-bottom-slider-pagination-bullet-bg: #e7e7e7;
+    --home-bottom-slider-pagination-bullet-thumb: black;
+    --progress-glow: #e7e7e7;
+
+    --catalog-controls-border-color: #e7e7e7;
+    --catalog-controls-bg-color: #ffffff;
+    --catalog-controls-shadow-color: rgba(58, 58, 58, 0.15);
+
+    --footer-border-color: rgba(58, 58, 58, 0.5);
+
+    .page-header--always-dark {
+        --text-color: white;
+        --primary-color: #fff;
+        --primary-color-hover: #fff;
+        --btn-borders-color: #1b1b1b;
+        --bg-color: #000000;
+        --home-mobile-about-text: rgba(255, 255, 255, 0.5);
+        --theme-btn-dark-color: #3a3a3a;
+        --theme-btn-dark-color-active: white;
+        --theme-btn-light-color: #3a3a3a;
+        --theme-btn-light-color-active: white;
+        --tumbler-bg-color: #1b1b1b;
+        --tumbler-circle-color: white;
+    }
+}
+
 .color-theme-blue {
     --primary-color: #4200ff;
     --primary-color-hover: #351392;
@@ -152,7 +224,7 @@ body {
     --primary-color: #4200ff;
     --primary-color-hover: #351392;
     --bg-color: #efe6fb;
-    --btn-borders-color: #D3C3FF;
+    --btn-borders-color: #d3c3ff;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #d4c4ff;
     --theme-btn-dark-color-active: #4200ff;
@@ -225,7 +297,7 @@ body {
     --primary-color: #ff4343;
     --primary-color-hover: #941e1e;
     --bg-color: #ffe3e3;
-    --btn-borders-color: #FFD3D3;
+    --btn-borders-color: #ffd3d3;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #ffc6c6;
     --theme-btn-dark-color-active: #ff4343;
@@ -298,7 +370,7 @@ body {
     --primary-color: #409133;
     --primary-color-hover: #216816;
     --bg-color: #dfeddd;
-    --btn-borders-color: #C2DBBD;
+    --btn-borders-color: #c2dbbd;
     --text-color: #3a3a3a;
     --theme-btn-dark-color: #bdddb8;
     --theme-btn-dark-color-active: #409133;
