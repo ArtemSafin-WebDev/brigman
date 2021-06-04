@@ -493,13 +493,24 @@ html {
     font-size: 10px;
     font-size: clamp(4px, 0.46vw, 25px);
 
+    @include breakpoint(tablet) {
+        font-size: 8px;
+    }
     @include breakpoint(small-tablet) {
-        font-size: 6px;
+        font-size: 7px;
+    }
+
+    
+
+    @media screen and (max-width: 700px) {
+        font-size: 5px;
     }
 
     @include breakpoint(mobile) {
         font-size: 10px;
     }
+
+    
 
     @include breakpoint(supersmall-mobile) {
         font-size: 8px;

@@ -253,7 +253,7 @@
         }
 
         @include breakpoint(small-tablet) {
-            margin-right: 6rem;
+            margin-right: 3rem;
         }
     }
 
@@ -265,7 +265,7 @@
         }
 
         @include breakpoint(small-tablet) {
-            margin-left: 6rem;
+            margin-left: 3rem;
         }
     }
 }
@@ -441,15 +441,36 @@
     backface-visibility: hidden;
     transform: translateZ(0);
 
+    @include breakpoint(small-tablet) {
+        width: 35rem;
+        margin-right: 3rem;
+    }
+
     @include breakpoint(mobile) {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
     &::before {
         content: '';
         display: block;
         padding-bottom: 56.25%;
+
+        
+
+        @include breakpoint(small-tablet) {
+           
+            .home__bottom-slider & {
+                padding-bottom: 100%;
+            }
+        }
+
+        @include breakpoint(mobile) {
+            
+            .home__bottom-slider & {
+                padding-bottom: 56.25%;
+            }
+        }
     }
 }
 

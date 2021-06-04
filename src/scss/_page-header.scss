@@ -104,10 +104,14 @@
 .page-header__about-text {
     font-size: 1.9rem;
     line-height: 2.3rem;
-    max-width: 24rem;
+  
     margin-right: 4rem;
     color: var(--text-color);
+    width: 100%;
 
+    p {
+        max-width: 24rem;
+    }
     @include breakpoint(mobile) {
         font-size: 1.6rem;
         line-height: 1.9rem;
@@ -116,6 +120,7 @@
         width: 100%;
         color: var(--home-mobile-about-text);
         margin-top: 2.7rem;
+        width: 100%;
     }
 }
 
@@ -172,7 +177,8 @@
     border: 1px solid var(--btn-borders-color);
     color: var(--text-color);
     transition: all 0.3s;
-
+    white-space: nowrap;
+    flex-shrink: 0;
     display: block;
     position: relative;
     z-index: 1;

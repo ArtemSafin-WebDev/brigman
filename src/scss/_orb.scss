@@ -13,7 +13,7 @@
     }
 
     .no-mobile-orb & {
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             display: none;
         }
     }
