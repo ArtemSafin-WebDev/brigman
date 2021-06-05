@@ -12,7 +12,7 @@
         display: none;
     }
 
-    .no-mobile-orb & {
+    .touch.no-mobile-orb & {
         @include breakpoint(tablet) {
             display: none;
         }

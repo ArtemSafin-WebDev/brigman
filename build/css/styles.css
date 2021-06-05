@@ -2235,7 +2235,7 @@ select:-webkit-autofill:focus {
   .light-theme .orb {
     display: none; }
   @media only screen and (max-width: 1024px) {
-    .no-mobile-orb .orb {
+    .touch.no-mobile-orb .orb {
       display: none; } }
   @media only screen and (max-width: 1024px) {
     .orb {
@@ -4180,6 +4180,9 @@ select:-webkit-autofill:focus {
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: white; }
+  .color-theme-grayscale .article__tag {
+    background-color: black;
+    color: white; }
   .article__tag:last-child {
     margin-right: 0; }
   .article__tag:link, .article__tag:visited {
