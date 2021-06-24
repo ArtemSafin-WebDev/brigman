@@ -2444,6 +2444,9 @@ select:-webkit-autofill:focus {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow: hidden; }
+  .color-theme-grayscale.light-theme .home__top-slider-card-bg {
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); }
 
 .home__top-slider-card-bg-image {
   position: absolute;

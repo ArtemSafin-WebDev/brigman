@@ -90,11 +90,15 @@
 .home__top-slider {
     margin-bottom: 6rem;
     position: relative;
+    
     @include breakpoint(mobile) {
         margin-bottom: 4.5rem;
     }
     .swiper-container {
         overflow: visible;
+       
+        
+       
     }
 
     // &.slider-with-autoplay {
@@ -159,7 +163,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-
+   
+   
     z-index: 1;
     min-height: 50rem;
     padding: 3rem 4rem;
@@ -196,11 +201,15 @@
     top: 0;
     bottom: 0;
     right: 0;
-
+    
     background: rgba(white, 0.1);
     z-index: -1;
     transition: all 0.5s;
     overflow: hidden;
+
+    .color-theme-grayscale.light-theme & {
+        box-shadow: 0 0 1rem rgba(black, .2);
+    }
 }
 
 .home__top-slider-card-bg-image {
@@ -224,7 +233,7 @@
     display: inline-flex;
     margin-bottom: auto;
     align-self: flex-start;
-
+   
     .color-theme-grayscale & {
         background-color: black;
         color: white;
