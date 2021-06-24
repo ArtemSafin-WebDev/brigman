@@ -1,4 +1,4 @@
-import { Swiper, Navigation, Pagination, Autoplay } from 'swiper';
+import { Swiper, Navigation, Pagination, Autoplay} from 'swiper';
 
 Swiper.use([Navigation, Pagination, Autoplay]);
 
@@ -15,6 +15,10 @@ export default function homeTopSlider() {
             speed: 500,
             loop: false,
             loopedSlides: 7,
+            navigation: {
+                nextEl: element.querySelector('.home__top-slider-arrow--next'),
+                prevEl: element.querySelector('.home__top-slider-arrow--prev')
+            },
             loopAdditionalSlides: 7,
             centeredSlides: false,
             pagination: {
