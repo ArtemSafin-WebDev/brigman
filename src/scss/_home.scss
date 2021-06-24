@@ -207,7 +207,7 @@
     transition: all 0.5s;
     overflow: hidden;
 
-    .color-theme-grayscale.light-theme & {
+    .light-theme & {
         box-shadow: 0 0 1rem rgba(black, .2);
     }
 }
