@@ -14,7 +14,7 @@ export default function scrollUp() {
                 scrollTo: {
                     y: 0,
                     ease: 'easeOut',
-                    autoKill: true
+                    autoKill: false
                 }
             });
         });
