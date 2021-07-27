@@ -2500,9 +2500,14 @@ select:-webkit-autofill:focus {
 
 .home__top-slider-card-title {
   font-weight: bold;
-  font-size: 1.9rem;
-  line-height: 2.3rem;
+  font-size: 19px;
+  line-height: 23px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1024px) {
+    .home__top-slider-card-title {
+      font-weight: bold;
+      font-size: 1.9rem;
+      line-height: 2.3rem; } }
   @media only screen and (max-width: 640px) {
     .home__top-slider-card-title {
       font-size: 1.2rem;
