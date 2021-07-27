@@ -1,6 +1,8 @@
-import { Swiper, Navigation, Pagination, Autoplay, Mousewheel  } from 'swiper';
+import { Swiper, Navigation, Pagination, Autoplay, Mousewheel } from 'swiper';
 
-Swiper.use([Navigation, Pagination, Autoplay, Mousewheel ]);
+Swiper.use([Navigation, Pagination, Autoplay, Mousewheel]);
+
+import { primaryInput } from 'detect-it';
 
 export default function homeTopSlider() {
     const elements = Array.from(document.querySelectorAll('.js-home-top-slider'));
@@ -8,17 +10,14 @@ export default function homeTopSlider() {
     elements.forEach(element => {
         const container = element.querySelector('.swiper-container');
 
-        const options = {
+        let options = {
             slidesPerView: 'auto',
             spaceBetween: 0,
             watchOverflow: true,
             speed: 500,
             loop: false,
             loopedSlides: 7,
-            mousewheel: {
-                invert: false,
-                releaseOnEdges: true
-            },
+
             navigation: {
                 nextEl: element.querySelector('.home__top-slider-arrow--next'),
                 prevEl: element.querySelector('.home__top-slider-arrow--prev')
@@ -30,6 +29,15 @@ export default function homeTopSlider() {
                 type: 'progressbar'
             }
         };
+        if (!(primaryInput === 'touch')) {
+            options = {
+                ...options,
+                mousewheel: {
+                    invert: false,
+                    releaseOnEdges: true
+                }
+            };
+        }
 
         new Swiper(container, options);
     });

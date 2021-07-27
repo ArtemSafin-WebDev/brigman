@@ -105,7 +105,7 @@
     .swiper-slide {
         display: flex;
         flex-direction: color;
-        width: 310px;
+        width: 31rem;
         transition: width 0.5s;
 
         @include breakpoint(small-tablet) {
@@ -139,11 +139,9 @@
         }
 
         .no-touch &:hover {
-            width: 340px;
+            width: 34rem;
 
-            @include breakpoint(tablet) {
-                width: 34rem;
-            }
+            
 
             @include breakpoint(mobile) {
                 width: 24rem;
@@ -164,15 +162,12 @@
     flex-grow: 1;
 
     z-index: 1;
-    min-height: 500px;
-    padding: 30px 40px;
+    min-height: 50rem;
+    padding: 3rem 4rem;
 
     color: white;
 
-    @include breakpoint(tablet) {
-        min-height: 50rem;
-        padding: 3rem 4rem;
-    }
+   
 
     &:link,
     &:visited {
@@ -227,11 +222,11 @@
 .home__top-slider-card-category {
     background-color: var(--primary-color);
     color: white;
-    padding: 7px;
-    border-radius: 6px;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
     font-weight: bold;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     text-transform: uppercase;
     display: inline-flex;
     margin-bottom: auto;
@@ -242,13 +237,7 @@
         color: white;
     }
 
-    @include breakpoint(tablet) {
-        padding: 0.7rem;
-        border-radius: 0.6rem;
-        font-weight: bold;
-        font-size: 1.1rem;
-        line-height: 1.4rem;
-    }
+    
 
     @include breakpoint(mobile) {
         font-size: 0.8rem;
@@ -259,15 +248,11 @@
 
 .home__top-slider-card-title {
     font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
+    
+    font-size: 1.9rem;
+    line-height: 2.3rem;
     text-transform: uppercase;
-
-    @include breakpoint(tablet) {
-        font-weight: bold;
-        font-size: 1.9rem;
-        line-height: 2.3rem;
-    } 
+  
 
     @include breakpoint(mobile) {
         font-size: 1.2rem;
@@ -549,7 +534,7 @@
 
     @include breakpoint(tablet) {
         width: 35rem;
-        margin-right: 3rem;
+        margin-right: 4rem;
     }
 
     @include breakpoint(small-tablet) {

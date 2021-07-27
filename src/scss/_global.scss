@@ -491,16 +491,28 @@ html {
     @include noHighlight();
 
     font-size: 10px;
-    font-size: clamp(4px, 0.46vw, 25px);
+    font-size: clamp(4px, 0.44vw, 25px);
+
+    @media (max-aspect-ratio: 16/9) {
+        font-size: clamp(4px, 0.5vw, 25px);
+    }
+    @media (max-aspect-ratio: 15/9) {
+        font-size: clamp(4px, 0.55vw, 25px);
+    }
+    @media (max-aspect-ratio: 14/9) {
+        font-size: clamp(4px, 0.60vw, 25px);
+    }
 
     @include breakpoint(tablet) {
         font-size: 8px;
     }
-    @include breakpoint(small-tablet) {
-        font-size: 7px;
-    }
 
-    
+    @media screen and (max-width: 870px) {
+        font-size: 7.5px;
+    }
+    @include breakpoint(small-tablet) {
+        font-size: 6.5px;
+    }
 
     @media screen and (max-width: 700px) {
         font-size: 5px;
@@ -509,8 +521,6 @@ html {
     @include breakpoint(mobile) {
         font-size: 10px;
     }
-
-    
 
     @include breakpoint(supersmall-mobile) {
         font-size: 8px;
