@@ -173,6 +173,46 @@
                 transform: translate(179.099991px, 427.235596px);
             }
 
+            #elQUMWLfvrT17_to {
+                transform: translate(255.699997px, 184.66893px);
+            }
+
+            #epE4h2tMfaj12_to {
+                transform: translate(213.280679px, 63.628454px);
+            }
+
+            #epE4h2tMfaj17_to {
+                transform: translate(246.350006px, 106.54386px);
+            }
+
+            #epE4h2tMfaj20_to {
+                transform: translate(265.299996px, 149.062496px);
+            }
+
+            #epE4h2tMfaj25_to {
+                transform: translate(293.350006px, 168.198792px);
+            }
+
+            #epE4h2tMfaj27_to {
+                transform: translate(297.950012px, 197.012485px);
+            }
+
+            #epE4h2tMfaj29_to {
+                transform: translate(302.550018px, 226.537485px);
+            }
+
+            #epE4h2tMfaj31_to {
+                transform: translate(308.018799px, 252.979111px);
+            }
+
+            #epE4h2tMfaj33_to {
+                transform: translate(311.75px, 277.354105px);
+            }
+
+            #epE4h2tMfaj41_to {
+                transform: translate(262.049995px, 198.098123px);
+            }
+
             @include breakpoint(mobile) {
                 width: 24rem;
             }
@@ -261,7 +301,7 @@
     circle,
     rect,
     g {
-        transition: transform 0.3s;
+        transition: transform 0.4s;
     }
 }
 
