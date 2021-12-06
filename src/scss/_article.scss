@@ -131,8 +131,8 @@
     color: var(--article-text-content-color);
     font-size: 2.4rem;
     line-height: 3.4rem;
-    padding-left: 19rem;
-    padding-right: 19rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     margin-bottom: 7.5rem;
     padding-bottom: 9rem;
     position: relative;
@@ -308,7 +308,7 @@
     }
 
     figure {
-        margin: 0 -19rem;
+        margin: 0 -15rem;
         margin-bottom: 3.8rem;
 
         @include breakpoint(tablet) {
@@ -332,7 +332,7 @@
         }
 
         figcaption {
-            padding-right: 19rem;
+            padding-right: 15rem;
             text-align: right;
             margin-top: 2rem;
             font-size: 1.8rem;
@@ -360,7 +360,7 @@
         line-height: 11rem;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        margin: 7rem -19rem;
+        margin: 7rem -15rem;
         padding: 5rem 0;
         border-top: 1px solid var(--article-table-border-color);
         border-bottom: 1px solid var(--article-table-border-color);
@@ -397,7 +397,7 @@
 }
 
 .article__text-content-fullwidth {
-    margin: 0 -19rem;
+   
     margin-bottom: 3.8rem;
 
     @include breakpoint(tablet) {
@@ -415,7 +415,7 @@
 }
 
 .article__text-content-comparison-table {
-    margin: 0 -19rem;
+    margin: 0 -15rem;
     margin-bottom: 3.8rem;
     margin-top: 3.8rem;
 
@@ -534,7 +534,7 @@
 }
 
 .article__text-content-gallery-slider {
-    margin: 10rem -19rem;
+    margin: 10rem -15rem;
 
     @include breakpoint(tablet) {
         margin-left: 0;
