@@ -2980,6 +2980,42 @@ body:not(.light-theme) .page-header__theme-tumbler::before {
   -webkit-transform: translate(413.703162px, 420.3px);
           transform: translate(413.703162px, 420.3px);
 }
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C14_to {
+  -webkit-transform: translate(276.000003px, 321.915143px);
+          transform: translate(276.000003px, 321.915143px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C26_to {
+  -webkit-transform: translate(341.900002px, 315.065149px);
+          transform: translate(341.900002px, 315.065149px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C30_to {
+  -webkit-transform: translate(413.526159px, 270.95px);
+          transform: translate(413.526159px, 270.95px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C37_to {
+  -webkit-transform: translate(305.20001px, 267.7px);
+          transform: translate(305.20001px, 267.7px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C47_to {
+  -webkit-transform: translate(358.400011px, 403.015152px);
+          transform: translate(358.400011px, 403.015152px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C72_to {
+  -webkit-transform: translate(276.599998px, 377.215143px);
+          transform: translate(276.599998px, 377.215143px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C86_to {
+  -webkit-transform: translate(236.700003px, 242.6px);
+          transform: translate(236.700003px, 242.6px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C112_to {
+  -webkit-transform: translate(222.300005px, 259.665131px);
+          transform: translate(222.300005px, 259.665131px);
+}
+.no-touch .home__top-slider .swiper-slide:hover #efR5pbV0j8C125_to {
+  -webkit-transform: translate(338px, 233.649999px);
+          transform: translate(338px, 233.649999px);
+}
 @media only screen and (max-width: 640px) {
   .no-touch .home__top-slider .swiper-slide:hover {
     width: 24rem;
@@ -3289,6 +3325,9 @@ body:not(.light-theme) .page-header__theme-tumbler::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media only screen and (max-width: 640px) {
   .home__bottom-slider-card {
@@ -3296,6 +3335,9 @@ body:not(.light-theme) .page-header__theme-tumbler::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 .no-touch .home__bottom-slider-card:hover .home__bottom-slider-card-image {

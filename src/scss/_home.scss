@@ -280,7 +280,7 @@
             #e37YMG5hmpS5_to {
                 transform: translate(260.549995px, 145.999997px);
             }
-            
+
             #e5OtR4CGYKz4_to {
                 transform: translate(371.189072px, 345.130249px);
             }
@@ -314,7 +314,43 @@
             }
 
             #e5OtR4CGYKz83_to {
-                transform: translate(413.703162px, 420.3px)
+                transform: translate(413.703162px, 420.3px);
+            }
+
+            #efR5pbV0j8C14_to {
+                transform: translate(276.000003px, 321.915143px);
+            }
+
+            #efR5pbV0j8C26_to {
+                transform: translate(341.900002px, 315.065149px);
+            }
+
+            #efR5pbV0j8C30_to {
+                transform: translate(413.526159px, 270.95px);
+            }
+
+            #efR5pbV0j8C37_to {
+                transform: translate(305.20001px, 267.7px);
+            }
+
+            #efR5pbV0j8C47_to {
+                transform: translate(358.400011px, 403.015152px);
+            }
+
+            #efR5pbV0j8C72_to {
+                transform: translate(276.599998px, 377.215143px);
+            }
+
+            #efR5pbV0j8C86_to {
+                transform: translate(236.700003px, 242.6px);
+            }
+
+            #efR5pbV0j8C112_to {
+                transform: translate(222.300005px, 259.665131px);
+            }
+
+            #efR5pbV0j8C125_to {
+                transform: translate(338px, 233.649999px);
             }
 
             @include breakpoint(mobile) {
@@ -578,9 +614,11 @@
 
 .home__bottom-slider-card {
     display: flex;
+    align-items: flex-start;
 
     @include breakpoint(mobile) {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .no-touch &:hover {
