@@ -512,11 +512,15 @@
         width: 6.6rem;
         height: 6rem;
         border-radius: 1.6rem;
-
+        
         .icon-gear {
             width: 2.4rem;
             height: 2.4rem;
         }
+    }
+
+    @include breakpoint(mobile) {
+        height: 3.25rem;
     }
 }
 

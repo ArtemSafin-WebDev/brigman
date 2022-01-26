@@ -406,7 +406,6 @@
 }
 
 .article__text-content-fullwidth {
-   
     margin-bottom: 3.8rem;
 
     @include breakpoint(tablet) {
@@ -748,19 +747,20 @@
     grid-gap: 2rem;
     @include breakpoint(mobile) {
         margin-bottom: 4rem;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: 'joystick joystick' 'like up';
     }
 }
 
 .article__bottom-controls-joystick {
     display: grid;
-   
+
     grid-template-columns: minmax(0, 1fr) minmax(auto, 16rem) minmax(0, 1fr);
 
     @include breakpoint(mobile) {
         grid-template-columns: minmax(0, 1fr) minmax(auto, 8rem) minmax(0, 1fr);
         margin-bottom: 1rem;
-       
+        grid-area: joystick;
     }
 }
 
@@ -777,7 +777,7 @@
     letter-spacing: 0.06em;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    
+
     text-transform: uppercase;
     border: 1px solid var(--catalog-controls-border-color);
     border-radius: 1.6rem;
@@ -804,10 +804,11 @@
 }
 
 .article__bottom-controls-joystick-wrapper {
-    grid-column: 2 / 3; 
+    grid-column: 2 / 3;
 
     @include breakpoint(mobile) {
         grid-column: initial;
+        grid-area: joystick;
     }
 }
 
@@ -930,6 +931,7 @@
     @include breakpoint(mobile) {
         font-size: 1.4rem;
         padding: 1.5rem 1.5rem;
+        grid-area: like;
     }
     &:link,
     &:visited {
@@ -981,7 +983,8 @@
         font-size: 1.4rem;
         padding: 1.5rem 1.5rem;
         grid-column: initial;
-        border-radius: .6rem;
+        border-radius: 0.6rem;
+        grid-area: up;
     }
     &:link,
     &:visited {
