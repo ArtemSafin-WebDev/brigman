@@ -16,7 +16,7 @@ export default function homeBottomSlider() {
             slidesPerView: 1,
             spaceBetween: 30,
             watchOverflow: true,
-            speed: 1000,
+            speed: 600,
             preventInteractionOnTransition: false,
             loop: true,
             threshold: 5,
@@ -137,5 +137,13 @@ export default function homeBottomSlider() {
                 });
             }
         }
+
+        progressBullets.forEach((bullet, bulletIndex) => {
+            bullet.addEventListener('click', event => {
+                event.preventDefault();
+
+                sliderInstance.slideToLoop(bulletIndex);
+            })
+        })
     });
 }
