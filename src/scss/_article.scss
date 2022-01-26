@@ -131,8 +131,8 @@
     color: var(--article-text-content-color);
     font-size: 2.4rem;
     line-height: 3.4rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    // padding-left: 15rem;
+    // padding-right: 15rem;
     margin-bottom: 7.5rem;
     padding-bottom: 9rem;
     position: relative;
@@ -317,7 +317,7 @@
     }
 
     figure {
-        margin: 0 -15rem;
+        // margin: 0 -15rem;
         margin-bottom: 3.8rem;
 
         @include breakpoint(tablet) {
@@ -369,7 +369,7 @@
         line-height: 11rem;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        margin: 7rem -15rem;
+        margin: 7rem 0;
         padding: 5rem 0;
         border-top: 1px solid var(--article-table-border-color);
         border-bottom: 1px solid var(--article-table-border-color);
@@ -424,7 +424,7 @@
 }
 
 .article__text-content-comparison-table {
-    margin: 0 -15rem;
+    margin: 0;
     margin-bottom: 3.8rem;
     margin-top: 3.8rem;
 
@@ -543,7 +543,7 @@
 }
 
 .article__text-content-gallery-slider {
-    margin: 10rem -15rem;
+    margin: 10rem 0;
 
     @include breakpoint(tablet) {
         margin-left: 0;
