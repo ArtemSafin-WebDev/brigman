@@ -14,7 +14,7 @@ export default function homeTopSlider() {
             slidesPerView: 'auto',
             spaceBetween: 0,
             watchOverflow: true,
-            speed: 500,
+            speed: 300,
             loop: false,
             loopedSlides: 7,
 
