@@ -98,6 +98,9 @@
     @include breakpoint(mobile) {
         padding: 0.6rem 0.8rem;
         border-radius: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -130,6 +133,8 @@
 
     @include breakpoint(mobile) {
         flex-wrap: wrap;
+        align-items: stretch;
+        
     }
 }
 
