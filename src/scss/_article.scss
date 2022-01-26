@@ -251,6 +251,15 @@
             margin-bottom: 2rem;
             position: relative;
 
+            & > p,
+            & > h1,
+            & > h2,
+            & > h3,
+            & > h4,
+            & > h5 {
+                display: contents;
+            }
+
             @include breakpoint(mobile) {
                 margin-bottom: 1.5rem;
             }

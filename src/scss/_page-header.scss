@@ -550,8 +550,8 @@
 .page-header__mobile-settings-choose-color-btn {
     flex-shrink: 0;
     margin-right: 2rem;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 22px;
+    height: 22px;
     background-color: currentColor;
     border-radius: 50%;
     z-index: 1;
@@ -559,14 +559,14 @@
     display: block;
     transition: box-shadow 0.2s;
     -webkit-user-drag: none;
-    user-drag: none;
+  
     &::before {
         content: '';
         position: absolute;
-        left: -0.3rem;
-        right: -0.3rem;
-        bottom: -0.3rem;
-        top: -0.3rem;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        top: -3px;
         border-radius: 50%;
         border: 1px solid currentColor;
         z-index: -1;
@@ -577,7 +577,7 @@
     }
 
     &.active {
-        box-shadow: 0px 0px 1.8rem currentColor;
+        box-shadow: 0px 0px 18px currentColor;
         &::before {
             opacity: 1;
         }
