@@ -21,7 +21,8 @@
     color: var(--text-color);
 
     @include breakpoint(mobile) {
-        margin-right: 2rem;
+        margin: 0;
+        grid-area: logo;
     }
 
     &:link,
@@ -107,7 +108,7 @@
 .page-header__about-text {
     font-size: 1.9rem;
     line-height: 2.3rem;
-  
+
     margin-right: 4rem;
     color: var(--text-color);
     width: 100%;
@@ -122,8 +123,11 @@
         order: 10;
         width: 100%;
         color: var(--home-mobile-about-text);
-        margin-top: 2.7rem;
+        // margin-top: 1rem;
         width: 100%;
+        grid-area: text;
+
+        display: none;
     }
 }
 
@@ -132,9 +136,12 @@
     align-items: center;
 
     @include breakpoint(mobile) {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
         align-items: stretch;
-        
+        grid-template-areas: 'logo links settings' 'mobile-links mobile-links mobile-links' 'text text text';
+        grid-gap: 1.2rem;
     }
 }
 
@@ -147,6 +154,7 @@
 
     @include breakpoint(mobile) {
         margin-right: 0;
+        grid-area: links;
     }
     &:last-child {
         margin-right: 0;
@@ -172,6 +180,51 @@
     }
 }
 
+.page-header__link-image-wrapper {
+    flex-shrink: 0;
+    width: 5rem;
+    height: 5rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -1.5rem;
+
+    // margin-top: -2.5rem;
+    // margin-bottom: -2.5rem;
+    margin-right: 0.5rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        width: 130%;
+        height: 130%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../img/pc-blur.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-color: red;
+        z-index: -1;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
 .page-header__link {
     font-weight: bold;
     font-size: 1.7rem;
@@ -184,17 +237,40 @@
     transition: all 0.3s;
     white-space: nowrap;
     flex-shrink: 0;
-    display: block;
+
     position: relative;
     z-index: 1;
     overflow: hidden;
     background-color: var(--bg-color);
     transition: opacity 0.2s, background-color 0.2s, transform 0.2s, color 0.2s, border-color 0.2s;
+    display: inline-flex;
+    align-items: center;
 
+    svg {
+        flex-shrink: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: currentColor;
+        margin-left: 1.2rem;
+    }
     @include breakpoint(mobile) {
         padding: 0.8rem 1.4rem;
         font-size: 1.2rem;
         line-height: 1.2;
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        &--buy-pc {
+            display: none;
+        }
+
+        .page-header__link--buy-pc + & {
+            border-top-left-radius: 0.6rem;
+            border-bottom-left-radius: 0.6rem;
+        }
     }
 
     &:link,
@@ -244,14 +320,21 @@
     }
 
     .color-theme-grayscale.no-touch &:hover,
-    .color-theme-grayscale.touch &:active, .color-theme-grayscale &.active {
+    .color-theme-grayscale.touch &:active,
+    .color-theme-grayscale &.active {
         background-color: var(--bg-color);
         color: var(--text-color);
     }
 
     .color-theme-grayscale &.active {
         border-color: var(--btn-borders-color);
-        
+    }
+}
+
+.page-header__links--mobile {
+    grid-area: mobile-links;
+    @include breakpointMF(small-tablet) {
+        display: none;
     }
 }
 
@@ -368,7 +451,8 @@
 
     @include breakpoint(mobile) {
         display: block;
-        margin-left: 0.8rem;
+        margin: 0;
+        grid-area: settings;
     }
 }
 
@@ -512,7 +596,7 @@
         width: 6.6rem;
         height: 6rem;
         border-radius: 1.6rem;
-        
+
         .icon-gear {
             width: 2.4rem;
             height: 2.4rem;
@@ -568,7 +652,7 @@
     display: block;
     transition: box-shadow 0.2s;
     -webkit-user-drag: none;
-  
+
     &::before {
         content: '';
         position: absolute;
