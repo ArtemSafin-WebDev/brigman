@@ -152,7 +152,7 @@
             #enQj7bY90rI21_to {
                 transform: translate(245.199997px, 265.75px);
 
-                transform: translate(245.199997px,285.75px);
+                transform: translate(245.199997px, 285.75px);
             }
 
             #eC1sEjXtYhA4_to {
@@ -174,8 +174,7 @@
             #eC1sEjXtYhA37_to {
                 transform: translate(179.099991px, 427.235596px);
 
-
-                transform: translate(210.099991px,380.235596px);
+                transform: translate(210.099991px, 380.235596px);
             }
 
             #elQUMWLfvrT17_to {
@@ -366,6 +365,13 @@
                 top: -2rem;
                 bottom: -2rem;
                 border-radius: 2rem;
+                border-color: rgba(white, 0.2);
+            }
+        }
+
+        .light-theme.no-touch &:hover {
+            .home__top-slider-card-bg {
+                border-color: rgba(black, 0.2);
             }
         }
     }
@@ -417,9 +423,25 @@
     z-index: -1;
     transition: all 0.5s;
     overflow: hidden;
+    border: 1px solid transparent;
+    border-right: 1px solid rgba(white, 0.06);
 
     .light-theme & {
-        box-shadow: 0 0 1rem rgba(black, 0.2);
+        border: 1px solid transparent;
+        border-top: 1px solid rgba(black, 0.06);
+        border-bottom: 1px solid rgba(black, 0.06);
+        border-right: 1px solid rgba(black, 0.06);
+    }
+
+    .swiper-slide:last-child & {
+        border-right-color: transparent;
+    }
+
+    .light-theme .swiper-slide:last-child & {
+        border-right-color: rgba(black, 0.06);
+    }
+    .light-theme .swiper-slide:first-child & {
+        border-left-color: rgba(black, 0.06);
     }
 }
 
