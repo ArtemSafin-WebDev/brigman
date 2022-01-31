@@ -2465,13 +2465,64 @@ body:not(.light-theme) .page-header__theme-tumbler::before {
   -webkit-box-shadow: 0px 0px 1.1rem var(--catalog-controls-shadow-color);
           box-shadow: 0px 0px 1.1rem var(--catalog-controls-shadow-color);
   padding: 3rem 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+  grid-row-gap: 4rem;
+  grid-template-areas: "theme cursor" "color color";
+}
+
+.page-header__cursor-toggle {
+  width: 4.4rem;
+  height: 2.2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: var(--theme-btn-dark-color);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.page-header__cursor-toggle::before {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  position: absolute;
+  left: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--theme-btn-dark-color-active);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(2.2rem);
+          transform: translateY(-50%) translateX(2.2rem);
+}
+.page-header__cursor-toggle.active::before {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.page-header__mobile-settings-dropdown-block--theme {
+  grid-area: theme;
+}
+
+.page-header__mobile-settings-dropdown-block--color {
+  grid-area: color;
 }
 
 .page-header__mobile-settings-dropdown-block {
-  margin-bottom: 4rem;
-}
-.page-header__mobile-settings-dropdown-block:last-child {
-  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .page-header__mobile-settings-dropdown-heading {
@@ -2709,6 +2760,9 @@ body:not(.light-theme) .page-header__theme-tumbler::before {
   pointer-events: none;
   position: fixed;
   z-index: -1;
+}
+.orb-hidden .orb {
+  display: none !important;
 }
 .light-theme .orb {
   display: none;

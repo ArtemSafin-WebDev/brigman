@@ -12,6 +12,16 @@ export default function orb() {
 
     document.body.prepend(orbElement);
 
+    const orbToggle = document.querySelector('.page-header__cursor-toggle');
+
+    if (orbToggle) {
+        orbToggle.addEventListener('click', event => {
+            event.preventDefault();
+            orbToggle.classList.toggle('active');
+            document.body.classList.toggle('orb-hidden');
+        });
+    }
+
     if (primaryInput === 'touch') return;
     document.addEventListener('mousemove', e => {
         gsap.to(orbElement, {
