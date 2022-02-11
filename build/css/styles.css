@@ -2764,9 +2764,6 @@ body:not(.light-theme) .page-header__theme-tumbler::before {
 .orb-hidden .orb {
   display: none !important;
 }
-.light-theme .orb {
-  display: none;
-}
 @media (max-width: 1024px), (max-aspect-ratio: 13/9) {
   .touch.no-mobile-orb .orb {
     display: none;
@@ -7336,6 +7333,9 @@ form.success .contacts__form-submit::after {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+body.color-theme-grayscale:not(.light-theme) .cookies__text {
+  color: black;
 }
 @media only screen and (max-width: 640px) {
   .cookies__text {

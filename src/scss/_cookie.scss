@@ -40,6 +40,10 @@
     width: 50%;
     flex-grow: 1;
 
+    body.color-theme-grayscale:not(.light-theme) & {
+        color: black;
+    }
+
     @include breakpoint(mobile) {
         font-size: 1.4rem;
         line-height: 1.2;

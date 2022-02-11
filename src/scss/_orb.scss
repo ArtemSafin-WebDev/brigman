@@ -12,9 +12,9 @@
         display: none !important;
     }
 
-    .light-theme & {
-        display: none;
-    }
+    // .light-theme & {
+    //     display: none;
+    // }
 
     .touch.no-mobile-orb & {
         @include breakpoint(tablet) {

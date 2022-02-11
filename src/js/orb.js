@@ -19,7 +19,18 @@ export default function orb() {
             event.preventDefault();
             orbToggle.classList.toggle('active');
             document.body.classList.toggle('orb-hidden');
+
+            if (window.localStorage.getItem('cursor') === 'on') {
+                window.localStorage.setItem('cursor', 'off');
+            } else {
+                window.localStorage.setItem('cursor', 'on');
+            }
         });
+
+        if (window.localStorage.getItem('cursor') === 'on') {
+            orbToggle.classList.add('active');
+            document.body.classList.add('orb-hidden');
+        }
     }
 
     if (primaryInput === 'touch') return;
