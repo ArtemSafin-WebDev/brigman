@@ -468,7 +468,7 @@
     z-index: 50;
 
     @include breakpointMF(small-tablet) {
-        width: 34rem;
+        width: max-content;
         padding-top: 2.5rem;
     }
 }
