@@ -39,7 +39,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(128, 0, 255, 0.6);
     --progress-glow: #9327ff;
-
+    --modal-bg-color: #13002C;
     --catalog-link-color: rgba(255, 255, 255, 0.4);
     --catalog-link-color-hover: white;
     --catalog-intro-gradient: linear-gradient(180deg, #0c001c 0%, rgba(12, 0, 28, 0.526042) 19.79%, rgba(12, 0, 28, 0.526042) 73.96%, #0c001c 100%);
@@ -82,7 +82,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(156, 93, 224, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(156, 93, 224, 0.6);
     --progress-glow: rgba(128, 0, 255, 0.5);
-
+    --modal-bg-color: #d2c5e4;
     --catalog-link-color: rgba(58, 58, 58, 0.3);
     --catalog-link-color-hover: rgb(58, 58, 58);
     --catalog-intro-gradient: linear-gradient(180deg, rgba(239, 223, 255, 0) 54.17%, var(--bg-color) 100%),
@@ -140,7 +140,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: white;
     --progress-glow: white;
-
+    --modal-bg-color: #000000;
     --catalog-controls-border-color: #1b1b1b;
     --catalog-controls-bg-color: #000000;
     --catalog-controls-shadow-color: white;
@@ -166,7 +166,7 @@ body {
     --home-bottom-slider-btn-color: #e7e7e7;
     --home-bottom-slider-btn-text-color: rgba(58, 58, 58, 0.5);
     --home-bottom-slider-pale-text: rgba(58, 58, 58, 0.5);
-
+    --modal-bg-color: rgb(209, 209, 209);
     --home-bottom-slider-pagination-bullet-bg: #e7e7e7;
     --home-bottom-slider-pagination-bullet-thumb: black;
     --progress-glow: #e7e7e7;
@@ -214,7 +214,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(66, 0, 255, 0.6);
     --progress-glow: rgba(66, 0, 255, 0.6);
-
+    --modal-bg-color: #1c094b;
     --catalog-controls-border-color: rgba(66, 0, 255, 0.5);
     --catalog-controls-bg-color: #070019;
     --catalog-controls-shadow-color: #4200ff;
@@ -242,7 +242,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(66, 0, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(66, 0, 255, 0.6);
     --progress-glow: rgba(66, 0, 255, 0.6);
-
+    --modal-bg-color: #caaeee;
     --catalog-controls-border-color: rgba(66, 0, 255, 0.18);
     --catalog-controls-bg-color: #efe6fb;
     --catalog-controls-shadow-color: #4400ff91;
@@ -286,7 +286,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(255, 67, 67, 0.6);
     --progress-glow: rgba(255, 67, 67, 0.6);
-
+    --modal-bg-color: #441717;
     --catalog-controls-border-color: rgba(255, 67, 67, 0.5);
     --catalog-controls-bg-color: #190707;
     --catalog-controls-shadow-color: #ff4343;
@@ -315,7 +315,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 67, 67, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(255, 67, 67, 0.6);
     --progress-glow: rgba(105, 184, 177, 0.6);
-
+    --modal-bg-color: #e9c1c1;
     --catalog-controls-border-color: rgba(255, 67, 67, 0.18);
     --catalog-controls-bg-color: #ffe3e3;
     --catalog-controls-shadow-color: #ff43438a;
@@ -359,7 +359,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgb(51, 103, 43);
     --progress-glow: rgba(66, 0, 255, 0.6);
-
+    --modal-bg-color: #21441d;
     --catalog-controls-border-color: rgba(64, 145, 51, 0.5);
     --catalog-controls-bg-color: #071206;
     --catalog-controls-shadow-color: #409133;
@@ -388,7 +388,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: #d3e6d0;
     --home-bottom-slider-pagination-bullet-thumb: rgba(64, 145, 51, 0.6);
     --progress-glow: rgba(105, 184, 177, 0.6);
-
+    --modal-bg-color: #dfeddd;
     --catalog-controls-border-color: rgba(64, 145, 51, 0.18);
     --catalog-controls-bg-color: #dfeddd;
     --catalog-controls-shadow-color: rgba(64, 145, 51, 0.7);
@@ -432,6 +432,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 255, 255, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(255, 129, 58, 0.6);
     --progress-glow: rgba(66, 0, 255, 0.6);
+    --modal-bg-color: #4d230a;
 
     --catalog-controls-border-color: rgba(255, 129, 58, 0.5);
     --catalog-controls-bg-color: #190900;
@@ -461,6 +462,7 @@ body {
     --home-bottom-slider-pagination-bullet-bg: rgba(255, 129, 58, 0.1);
     --home-bottom-slider-pagination-bullet-thumb: rgba(255, 129, 58, 0.6);
     --progress-glow: rgba(255, 89, 0, 0.6);
+    --modal-bg-color: #eccab8;
 
     --catalog-controls-border-color: #ffd9c4;
     --catalog-controls-bg-color: #ffece2;
@@ -526,10 +528,14 @@ html {
     @include breakpoint(supersmall-mobile) {
         font-size: 8px;
     }
+
+    @media screen and (max-width: 280px) {
+        font-size: 7px;
+    }
 }
 
 body {
-    min-width: 320px;
+    // min-width: 320px;
     font-size: 1.6rem;
     line-height: 1.2;
     min-height: 100vh;

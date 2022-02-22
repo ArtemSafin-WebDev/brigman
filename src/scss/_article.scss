@@ -144,7 +144,7 @@
 
     @include breakpoint(mobile) {
         margin: 0;
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
 
         font-size: 1.8rem;
         line-height: 1.3;
@@ -906,9 +906,19 @@
     flex-shrink: 0;
     transition: background-color 0.2s, border-color 0.2s;
 
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
     @include breakpoint(mobile) {
         width: 4rem;
         height: 4rem;
+
+        svg {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
     }
 }
 
@@ -1035,6 +1045,10 @@
 
 .article__comments {
     margin-bottom: 12.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 6rem;
+    }
 }
 
 .article__comments-btn {
@@ -1044,7 +1058,9 @@
     font-size: 3.3rem;
     line-height: 4.1rem;
     text-transform: uppercase;
-    margin-bottom: 4.5rem;
+    cursor: pointer;
+    user-select: none;
+   
     svg {
         flex-shrink: 0;
         margin-left: 2.5rem;
@@ -1053,6 +1069,35 @@
         height: 2rem;
         transition: transform 0.2s;
         position: relative;
+        transform: rotate(180deg);
+    }
+
+    .comments-shown & {
+        svg {
+            transform: rotate(0deg);
+        }
+
+       
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 2rem;
+        line-height: 1.2;
+       
+        svg {
+            width: 1.4rem;
+            height: 1.4rem;
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
@@ -1061,9 +1106,18 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        justify-content: initial;
+        gap: 2rem;
+    }
 }
 
 .article__comments-categories {
+
 }
 
 .article__comments-categories-list {
@@ -1071,6 +1125,17 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
+
+    @include breakpoint(mobile) {
+        flex-wrap: nowrap;
+        gap: 2rem;
+        overflow-y: hidden;
+        margin: 0 calc(-1 * var(--content-padding));
+        padding: 0 var(--content-padding);
+        padding-bottom: 2rem;
+
+        @include noScrollbar();
+    }
 }
 
 .article__comments-categories-list-item {
@@ -1088,6 +1153,7 @@
     text-transform: uppercase;
     flex-grow: 1;
     position: relative;
+    white-space: nowrap;
     &::before {
         content: '';
         position: absolute;
@@ -1136,6 +1202,10 @@
     line-height: 1.2;
     text-transform: uppercase;
 
+    @include breakpoint(mobile) {
+        margin: 0;
+    }
+
     svg {
         width: 1.8rem;
         height: 1.8rem;
@@ -1143,6 +1213,10 @@
         margin-left: 2rem;
         position: relative;
         bottom: 0.15rem;
+
+        @include breakpoint(mobile) {
+            margin-left: 1.2rem;
+        }
     }
 }
 
@@ -1154,6 +1228,11 @@
     border: 1px solid var(--home-mobile-about-text);
     margin-bottom: 6rem;
     transition: border-color 0.2s;
+
+    @include breakpoint(mobile) {
+        padding: 0.5rem;
+        margin-bottom: 3rem;
+    }
     &:last-child {
         margin-bottom: 0;
     }
@@ -1175,6 +1254,12 @@
     @include placeholder {
         color: var(--home-mobile-about-text);
     }
+
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
 }
 
 .article__comments-form-submit {
@@ -1186,6 +1271,10 @@
     flex-direction: column;
     transition: background-color 0.2s, border-color 0.2s;
     background-color: var(--bg-color);
+
+    @include breakpoint(mobile) {
+        padding: 0.8rem;
+    }
     &:hover {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
@@ -1211,6 +1300,11 @@
         height: 3.2rem;
         fill: currentColor;
         transition: fill 0.2s;
+
+        @include breakpoint(mobile) {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
     }
 }
 
@@ -1218,6 +1312,10 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-gap: 4rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 3rem;
+    }
 }
 
 .article__comments-list-item {
@@ -1225,6 +1323,13 @@
 
 .article__comment {
     display: flex;
+
+    @include breakpoint(mobile) {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr);
+        grid-gap: 2rem;
+        grid-template-areas: 'photo name name' 'description description description' 'btns btns likes';
+    }
 }
 
 .article__comment-photo-container {
@@ -1232,6 +1337,13 @@
     width: 8rem;
     height: 8rem;
     margin-right: 2rem;
+
+    @include breakpoint(mobile) {
+        width: 6rem;
+        height: 6rem;
+        margin: 0;
+        grid-area: photo;
+    }
 }
 
 .article__comment-photo-container-inner-wrapper {
@@ -1289,6 +1401,11 @@
     background-color: var(--btn-borders-color);
     z-index: 50;
 
+    @include breakpoint(mobile) {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
     body.light-theme:not(.color-theme-grayscale) & {
         background-color: var(--primary-color);
     }
@@ -1299,12 +1416,21 @@
         width: 1.2rem;
         height: 1.2rem;
         object-fit: contain;
+
+        @include breakpoint(mobile) {
+            width: 1rem;
+            height: 1rem;
+        }
     }
 
     svg {
         width: 1.2rem;
         height: 1.2rem;
         fill: currentColor;
+        @include breakpoint(mobile) {
+            width: 1rem;
+            height: 1rem;
+        }
     }
 }
 
@@ -1314,17 +1440,37 @@
     display: flex;
     align-items: flex-start;
     align-self: center;
+
+    @include breakpoint(mobile) {
+        display: block;
+        display: contents;
+      
+        width: 100%;
+        flex-grow: 0;
+    }
 }
 
 .article__comment-content-inner {
     width: 50%;
     flex-grow: 1;
+
+    @include breakpoint(mobile) {
+        display: contents;
+        width: 100%;
+        flex-grow: 0;
+    }
 }
 
 .article__comment-top-row {
     display: flex;
     align-items: baseline;
     margin-bottom: 1.2rem;
+
+    @include breakpoint(mobile) {
+        grid-area: name;
+        margin: 0;
+        align-self: center;
+    }
 }
 
 .article__comment-name {
@@ -1333,6 +1479,12 @@
     font-size: 2rem;
     line-height: 1.2;
     margin-right: 0.6rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        margin-right: 0.6rem;
+       
+    }
 }
 
 .article__comment-date {
@@ -1340,6 +1492,11 @@
     font-size: 1.1rem;
     line-height: 2rem;
     color: var(--home-mobile-about-text);
+
+    @include breakpoint(mobile) {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
 }
 
 .article__comment-description {
@@ -1348,12 +1505,25 @@
     line-height: 2rem;
     margin-bottom: 1.4rem;
     max-width: 80rem;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        grid-area: description;
+        margin: 0;
+    }
 }
 
 .article__comment-btns {
     display: flex;
     align-items: center;
     gap: 2rem;
+
+    @include breakpoint(mobile) {
+        gap: 1rem;
+        grid-area: btns;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
 }
 
@@ -1365,12 +1535,20 @@
     text-transform: uppercase;
     color: var(--home-mobile-about-text);
 
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+    }
+
     &:link,
     &:visited {
         color: var(--home-mobile-about-text);
     }
 
     &:hover {
+        color: var(--text-color);
+    }
+
+    &.active {
         color: var(--text-color);
     }
 }
@@ -1381,6 +1559,13 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        grid-area: likes;
+        gap: .5rem;
+        justify-self: flex-end;
+    }
 }
 
 .article__comment-likes-btn {
@@ -1469,13 +1654,50 @@
     font-size: 2rem;
     line-height: 1.2;
     text-align: center;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        min-width: 3rem;
+    }
 }
 
 
 .article__comment ~ .article__comments-list {
     padding-left: 10rem;
+
+    @include breakpoint(mobile) {
+        padding-left: 2rem;
+    }
 }
 
 .article__comments-list .article__comments-list {
     margin-top: 4rem;
+
+    @include breakpoint(mobile) {
+        margin-top: 3rem;
+    }
+}
+
+.article__comment ~ .article__comments-form {
+    margin: 0;
+    margin-top: 2rem;
+    display: none;
+}
+
+.form-shown > .article__comment ~ .article__comments-form {
+    display: flex;
+}
+
+.article__comments-content {
+    display: none;
+    margin-top: 4.5rem;
+
+    @include breakpoint(mobile) {
+        margin-top: 2.5rem;
+    }
+    .comments-shown & {
+        display: block;
+        animation-name: fade-in;
+        animation-duration: 0.5s;
+    }
 }

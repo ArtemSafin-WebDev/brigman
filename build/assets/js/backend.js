@@ -20,4 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    const reportBtns = Array.from(document.querySelectorAll('.js-report'));
+
+    reportBtns.forEach(btn => {
+        btn.addEventListener('click', event => {
+            event.preventDefault();
+            window.openModal('#report-modal');
+        })
+    })
 });

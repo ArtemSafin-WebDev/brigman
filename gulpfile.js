@@ -60,20 +60,20 @@ gulp.task('handlebars', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('styles', function () {
+gulp.task('styles', function() {
     return gulp
         .src('src/scss/styles.scss')
-        .pipe(plumber())
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(autoprefixer())
-       
+
         .pipe(gulp.dest('build/css'))
         .pipe(cssMinify())
         .pipe(rename('styles.min.css'))
         .pipe(sourcemaps.write('./sourcemaps'))
         .pipe(gulp.dest('build/css'))
-       
+
         .pipe(browserSync.stream());
 });
 
