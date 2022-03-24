@@ -20,9 +20,7 @@ import catalogSorting from './catalogSorting';
 import cookies from './cookies';
 import mobileSettings from './mobileSettings';
 import scrollUp from './scrollUp';
-import commentsReply from './commentsReply';
 import modals from './modals';
-import showComments from './showComments';
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -47,9 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     cookies();
     mobileSettings();
     scrollUp();
-    commentsReply();
     modals();
-    showComments();
+   
 });
 
 window.addEventListener('load', function() {
